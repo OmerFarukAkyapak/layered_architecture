@@ -1,3 +1,5 @@
+<“Ömer Faruk Akyapak” >
+
 BACKEND :
 Backend, kullanıcıların görmediği arka yüz (Server-side) geliştiren kişidir. Yani sistemin mimarisini oluşturan, veri tabanı yönetimini planlayan, sunucu ayarlamalarından sorumlu, sistemin maksimum seviyede verimli ve hızlı çalışmasını sağlayan kişidir.
 Backend programcıları, sunucu tarafında uygulamanın iş mantığını, veri tabanını ve diğer önemli işlevleri geliştirir. Kullanıcı arayüzü ile doğrudan etkileşime girmezler, ancak uygulamanın temel işlevselliğini ve veri yönetimini sağlarlar. 

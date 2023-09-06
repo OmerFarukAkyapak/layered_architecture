@@ -1,5 +1,7 @@
 GIT VERSION CONTROL
+
 <“Ömer Faruk Akyapak” >
+
 Versiyon Kontrolü :
 Bir dosya veya bir küme dosyadaki değişiklikleri takip edebilmek için uyguladığımız bir yöntem olarak tanımlayabiliriz. Git gibi sistemler tüm bu değişikliklerin tarihçesini ve içeriğini elektronik olarak bizim için takip ederek kayıt altına almamızı sağlayan veri tabanları olarak düşünülebilir.
 Dosya vb. yapının kayıt altına alınmış herhangi bir andaki haline versiyon denir.

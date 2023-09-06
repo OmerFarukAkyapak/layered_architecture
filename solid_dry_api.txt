@@ -1,4 +1,5 @@
 <”Ömer Faruk Akyapak”>
+
 SOLID :
 SOLID yazılım prensipleri; geliştirilen yazılımın esnek, yeniden kullanılabilir, sürdürülebilir ve anlaşılır olmasını sağlayan, kod tekrarını önleyen ve Robert C. Martin tarafından öne sürülen prensipler bütünüdür. 
 Kısaltması Michael Feathers tarafından tanımlanan bu prensiplerin amacı;
