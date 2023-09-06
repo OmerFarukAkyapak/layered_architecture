@@ -1,0 +1,74 @@
+<“Ömer Faruk Akyapak” >
+
+PROJE PLANI:
+Proje planı, belirli bir projeyi baştan sona özetleyen resmi bir belgedir. 
+Yazılım geliştirme planının arkasındaki ana fikir, projeyi başarıyla tamamlamak için gereken görevleri, kaynakları, öncelikleri ve riskleri belirleyerek fiili çalışma başlamadan önce mümkün olduğunca fazla bilgi toplamaktır. 
+Bir proje planı, devam eden operasyonel çalışmalarla karıştırmamak gerekir. 
+Bir projenin belirli bir tarihe kadar bir şey teslim etme niyetiyle net bir başlangıç ve bitiş tarihi vardır. Ve bir projenin planlama kısımları; neden, ne, ne zaman, kim ve nasıl konularını kapsar.
+
+Neden Bir Planlamaya İhtiyaç Var?
+Proje planlaması, diğer proje aşamaları boyunca paydaşlara, sponsorlara, ekiplere ve proje yöneticisine rehberlik etmede önemli bir rol oynar. İstenen hedefleri belirlemek, riskleri azaltmak, release tarihlerini kaçırmamak ve sonuç olarak üzerinde anlaşmaya varılan ürünü, hizmeti veya projeyi teslim etmek için planlama gereklidir. Dikkatli bir planlama olmadan, proje performansının zarar görmesi neredeyse kesindir.
+Proje planlaması, bir projeyi görevlere ayırmayı, proje ekibini bir araya getirmeyi ve işin tamamlanacağı bir çizelgeyi belirlemeyi gerektirir. Bu aşamada projeniz ne kadar büyük olursa olsun, projede daha küçük hedefler oluşturarak her birinin zaman çerçevesini belirler ve uygulanabilir olduğundan kesin bir şekilde emin olursunuz.
+
+Bir Proje Yönetim Planına Neler Dahil Edilir?
+İyi bir proje yönetim planı, projeyi başarılı bir şekilde hayata geçirmek için gerekli olan tüm bilgileri (kapsamı, ne yapılması gerektiği, ne zaman ve nasıl yapılacağı ve ilgili her görevden kimin sorumlu olduğu vb.) kapsamalıdır. Yazılım geliştirme, birçok adım gerektiren karmaşık teknik bilgiler içerdiğinden, ekibin daha rahat çalışabilmesi için planı hazırlarken mümkün olan her bir adımı görselleştirmek son derece yararlı olacaktır. 
+Düzgün bir planlama olmadan geliştirmeye başlamak ve planlama stresinden kurtulmak her ne kadar cazip gelse de, bu yaklaşım yanlış iletişime, gecikmelere, tatmin edici olmayan sonuçlara ve beklenmedik maliyetlere yol açabileceğini unutmamak gerekir. 
+İster büyük ölçekli kurumsal yazılımlar isterse basit bir mobil uygulama için olsun, sıfırdan bir proje üzerinde çalışmaya başladığınızda her zaman gerçekten neyi başarmaya çalıştığınızı tanımlayarak başlayın.
+
+Bir Yazılım Geliştirme Planı Nasıl Oluşturulur?
+Bir yazılım geliştirme planı yazmak için projenin tüm katılımcılarını aynı sayfada toplamanız gerekir. Tüm ekip, planın yapısını ve ana noktaları tartışmak için bir araya gelir ve planın tamamlanmasından sorumlu olacak sorumlu bir yönetici atar. Genellikle, bu aşamada, iş analistleri ve proje yöneticileri belge için en fazla sorumluluğu taşırlar.
+
+1.	Proje kapsamının belirlenmesi,
+Başlamadan önce, projenizin bitiş noktaları net olmalıdır bu nedenle bir yazılım proje planı oluşturmanın ilk adımı projenin kapsamını tanımlamaktır.
+
+2.	Gereksinimlerin belirlenmesi ve dokümantasyon,
+Paydaşlardan ihtiyaçların toplanması, bu ihtiyaçları bir ürün oluşturma aşamasına dahil etmeden önce uygulanabilirliğini ve uygunluğunu anlamak için analiz edilmesi ve son olarak; toplanan ihtiyaçların belgelenmesidir.
+
+3.	Bitiş tarihli hedefler oluşturmak,
+Bunu yapmak için projedeki her bir görevin ne kadar süreceğini belirlenmelidir. Kilometre taşları (milestones) hedeflere ulaşmada ekibe ve proje yöneticisine çok yardımcı olur.
+
+4.	Görevlerin ekiplere veya kişilere devredilmesi,
+Artık görevleri planladığınıza göre, işi tamamlamak için ihtiyaç duyduğunuz kaynakları belirleme zamanı. Projede karmaşık veya özel uzmanlık gerektirebilecek bir görev varsa, birlikte çalışmak üzere yetenekli kişilerden oluşan bir ekip oluşturulabilir.
+
+5.	Zaman çizelgesini oluşturmak,
+Tam olarak ne kadar iş gücüne ihtiyaç duyulacağını detaylandırmak ve ekiple proje ihtiyaçları hakkında iletişim kurmak, kilometre taşlarının zamanında ulaşılmasına ve çıktıların zamanında teslim edilmesine yardımcı olur. Proje zaman çizelgesi ile ekip üyelerini engelleyebilecek veya çakışan diğer projeler tespit edilir. Proje çizelgesi, her bir görevi tamamlamak için gereken çaba ve kaynak miktarını göstermenin yanı sıra, görev veya projenin süresi ile kaynak miktarını dengelemenize yardımcı olacaktır.
+
+6.	Proje takibi,
+Proje bitene kadar proje planlaması bitmez. İlerlemeyi ve proje kapsamını izlemeniz, bunu temel değerlerle karşılaştırmanız ve değişiklikleri yönetmeniz gerekecektir. Hiçbir plan mükemmel değildir, bu nedenle planı düzeltmeye ve sorunlar ortaya çıktıkça kritik kararlar almaya hazır olmalısınız.
+
+
+
+ROADMAP:
+Yol haritası, stratejik bir planın görselleştirilmiş halidir. Diğer bir deyişle çıktılarıdır. Dolayısıyla önce neyi başarmak istediğinize dair cesur bir vizyona ve arzularınızı nasıl gerçeğe dönüştüreceğinize dair sağlam bir stratejik plana ihtiyacınız var. Gerisi bunu görselleştirerek bir yol haritasına çevirmek.
+
+•	Yol haritası, bir işletmenin nerede olduğunu, nereye gitmek istediğini ve oraya nasıl ulaşacağını tanımlayan zamana dayalı bir plandır.
+
+•	Gelecek planlarıyla ilgili önemli bilgileri organize eden ve sunan görsel bir temsildir. Stratejik yol haritaları, planlama için ortak bir yaklaşımdır.
+
+•	Yöneticiler için etkili bir iletişim aracıdır ve stratejik girişimleri iş planlarıyla ilişkilendirir.
+
+•	Yol haritası, önemli hedeflere ulaşmaya yönelik çabaları sıralayan bir odaklama aracı görevi görür.
+
+•	Stratejik karar verme, firma başarısını belirleyen ana faktördür.
+
+•	Doğru kararlar, zamanında ve ilgili bilgiler gerektirir.
+
+•	Stratejik yol haritası, organizasyondaki farklı departmanların ve bireylerin stratejik karar verme için hayati bilgilere sahip olduğunu varsayar.
+
+•	Bir yol haritası, bir varış yerini hedefler, zaman çizelgeleri ve yoldaki ara duraklar açısından tanımlar.
+
+•	İstenilen hedefe ulaşmak için gerekli pratik adımları gösterir.
+
+•	Adımlar arasındaki karşılıklı bağımlılıkları dikkate alır ve kaynak tahsisini optimize etmeye ve riskleri en aza indirmeye yardımcı olan alternatif yolları tahmin eder.
+
+•	Yol haritası, işbirlikçi bir stratejik planlama sürecidir.
+
+Roadmap Oluşturmanın Faydaları Nelerdir?
+Yol haritalamanın temel faydası, iş stratejinizi görselleştirerek tüm paydaşlarla iletişim kurmayı ve iş sonuçlarına uyum sağlamayı ve takibini kolaylaştırmaktır. Yol haritanızı görsel ve çekici olacak şekilde tasarlamak, onun anlaşılmasını, takibini ve paydaşların katılımını sağlamasının anahtarıdır. 
+Eski usul statik yol haritaları genellikle ilgi çekici değildir. Sadece word’de yazılmış text şeklinde yazılardan oluşur. Bu haritalarda kişiler okumayı da pek sevmediklerinden ayrıntıları kaçırırlar. 
+Bu haliyle herkesin anlayacağı bir şekilde ve daha geniş kitle ile paylaşılması zordur. Ortak bir anlayış ve hedef zihinlerde oluşturmaz. Ortak bir yol haritası yapısının eksikliği de, tutarsız bir raporlamaya ve ilerleme sorunlarına sebep olur. 
+Stratejik yol haritasının görsel bir hali yani infografik hali olmadan, paydaşlar teknolojideki, kaynaklardaki veya finansmandaki boşlukları kolayca göremezler ve ilişkiler veya karşılıklı bağımlılıklar kolayca görselleştirilemediğinden, liderlerin veya ekiplerin kararlarının etkisini anlaması veya izlemesi zordur. 
+Çalışanların strateji hakkında geri bildirimde bulunmaları için gerçek zamanlı bir mekanizma olmadığında, yol haritası da geçersiz hale gelir ve süreç çevik bir şekilde işlemez. 
+İnsan beynindeki hücrelerin %60’ı görmek üzere çalıştığını bilirsek, infografik ögelerle bir şeyi görselleştirmek, her zaman kavrayışı destekleyecektir. Ortak hafızaya işlenmiş hedefler ve desteklenen motivasyon ile de bir işletmenin başarması çok daha kolay ve hızlıdır.
+ 
+ 
