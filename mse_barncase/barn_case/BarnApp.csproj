@@ -46,11 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class\Animal.cs" />
-    <Compile Include="Class\Chicken.cs" />
-    <Compile Include="Class\Cow.cs" />
-    <Compile Include="Class\Farm.cs" />
-    <Compile Include="Class\Product.cs" />
+    <Compile Include="Entities\Animal.cs" />
+    <Compile Include="Entities\Chicken.cs" />
+    <Compile Include="Entities\Cow.cs" />
+    <Compile Include="Entities\Farm.cs" />
+    <Compile Include="Entities\IFarm.cs" />
+    <Compile Include="Entities\Product.cs" />
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
