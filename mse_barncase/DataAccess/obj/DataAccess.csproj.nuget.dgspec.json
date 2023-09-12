@@ -4,6 +4,67 @@
     "C:\\Users\\faruk\\OneDrive\\Masaüstü\\projects\\mse intern\\mse_intern\\mse_barncase\\DataAccess\\DataAccess.csproj": {}
   },
   "projects": {
+    "C:\\Users\\faruk\\OneDrive\\Masaüstü\\projects\\mse intern\\mse_intern\\mse_barncase\\Core\\Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\faruk\\OneDrive\\Masaüstü\\projects\\mse intern\\mse_intern\\mse_barncase\\Core\\Core.csproj",
+        "projectName": "Core",
+        "projectPath": "C:\\Users\\faruk\\OneDrive\\Masaüstü\\projects\\mse intern\\mse_intern\\mse_barncase\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\faruk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\faruk\\OneDrive\\Masaüstü\\projects\\mse intern\\mse_intern\\mse_barncase\\Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\faruk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\faruk\\OneDrive\\Masaüstü\\projects\\mse intern\\mse_intern\\mse_barncase\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -34,7 +95,79 @@
         "frameworks": {
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\faruk\\OneDrive\\Masaüstü\\projects\\mse intern\\mse_intern\\mse_barncase\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\faruk\\OneDrive\\Masaüstü\\projects\\mse intern\\mse_intern\\mse_barncase\\Core\\Core.csproj"
+              },
+              "C:\\Users\\faruk\\OneDrive\\Masaüstü\\projects\\mse intern\\mse_intern\\mse_barncase\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\faruk\\OneDrive\\Masaüstü\\projects\\mse intern\\mse_intern\\mse_barncase\\Entities\\Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\faruk\\OneDrive\\Masaüstü\\projects\\mse intern\\mse_intern\\mse_barncase\\Entities\\Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\faruk\\OneDrive\\Masaüstü\\projects\\mse intern\\mse_intern\\mse_barncase\\Entities\\Entities.csproj",
+        "projectName": "Entities",
+        "projectPath": "C:\\Users\\faruk\\OneDrive\\Masaüstü\\projects\\mse intern\\mse_intern\\mse_barncase\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\faruk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\faruk\\OneDrive\\Masaüstü\\projects\\mse intern\\mse_intern\\mse_barncase\\Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\faruk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\faruk\\OneDrive\\Masaüstü\\projects\\mse intern\\mse_intern\\mse_barncase\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\faruk\\OneDrive\\Masaüstü\\projects\\mse intern\\mse_intern\\mse_barncase\\Core\\Core.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

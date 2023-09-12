@@ -1,11 +1,49 @@
 {
   "version": 3,
   "targets": {
-    ".NETStandard,Version=v2.1": {}
+    ".NETStandard,Version=v2.1": {
+      "Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.dll": {}
+        }
+      },
+      "Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entities.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Core/1.0.0": {
+      "type": "project",
+      "path": "../Core/Core.csproj",
+      "msbuildProject": "../Core/Core.csproj"
+    },
+    "Entities/1.0.0": {
+      "type": "project",
+      "path": "../Entities/Entities.csproj",
+      "msbuildProject": "../Entities/Entities.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETStandard,Version=v2.1": []
+    ".NETStandard,Version=v2.1": [
+      "Core >= 1.0.0",
+      "Entities >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\faruk\\.nuget\\packages\\": {},
@@ -42,7 +80,14 @@
       "frameworks": {
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\faruk\\OneDrive\\Masaüstü\\projects\\mse intern\\mse_intern\\mse_barncase\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\faruk\\OneDrive\\Masaüstü\\projects\\mse intern\\mse_intern\\mse_barncase\\Core\\Core.csproj"
+            },
+            "C:\\Users\\faruk\\OneDrive\\Masaüstü\\projects\\mse intern\\mse_intern\\mse_barncase\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\faruk\\OneDrive\\Masaüstü\\projects\\mse intern\\mse_intern\\mse_barncase\\Entities\\Entities.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
