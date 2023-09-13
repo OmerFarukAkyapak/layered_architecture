@@ -7,12 +7,11 @@ namespace Entities.Concrete
 {
     public class Animal : IEntity
     {
-        public int AnimalId { get; set; }
-        public string AnimalType { get; set; }
-        public string Gender { get; set; }
-        public int Age { get; set; }
-        public int LifeSpan { get; set; }
-        public bool IsAlive { get; set; }
-        public int AnimalPrice { get; set; }
+        public int AnimalID { get; set; }
+        public int AnimalTypeID { get; set; }
+        public int AnimalGenderID { get; set; }
+        public int AnimalAge { get; set; }   
+        public bool AnimalIsSold { get; set; }
+        public bool AnimalIsAlive { get; set; }
     }
 }

@@ -8,6 +8,6 @@ namespace DataAccess.Abstact
 {
     public interface IAnimalDal : IEntityRepository<Animal>
     {
-
+        
     }
 }
