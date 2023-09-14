@@ -1,9 +1,0 @@
-C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\barn_case\bin\Debug\barn_case.exe.config
-C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\barn_case\bin\Debug\barn_case.exe
-C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\barn_case\bin\Debug\barn_case.pdb
-C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\barn_case\obj\Debug\barn_case.csproj.AssemblyReference.cache
-C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\barn_case\obj\Debug\barn_case.Properties.Resources.resources
-C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\barn_case\obj\Debug\barn_case.csproj.GenerateResource.cache
-C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\barn_case\obj\Debug\barn_case.csproj.CoreCompileInputs.cache
-C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\barn_case\obj\Debug\barn_case.exe
-C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\barn_case\obj\Debug\barn_case.pdb
