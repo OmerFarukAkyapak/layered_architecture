@@ -128,5 +128,11 @@
   <ItemGroup>
     <None Include="Resources\eggs.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bussiness\Bussiness.csproj">
+      <Project>{2B0B1477-F736-4DA0-BF25-95EB3EC3166E}</Project>
+      <Name>Bussiness</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -14,5 +14,6 @@ namespace DataAccess.Concrete.EntityFramework.Contexts
         }
 
         public DbSet<Animal> Animal { get; set; }
+        public DbSet<Barn> Farm { get; set; }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿//using Bussiness.Abstract;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,10 +13,15 @@ namespace barn_case
 {
     public partial class FormDashboard : Form
     {
-        public FormDashboard()
+        //private IBarnService _barnService;
+        
+        public FormDashboard(/*IBarnService barnService*/)
         {
             InitializeComponent();
-        }
+            //_barnService = barnService;
 
+            lblDateTime.Text = DateTime.Now.ToString();
+        }
+     
     }
 }

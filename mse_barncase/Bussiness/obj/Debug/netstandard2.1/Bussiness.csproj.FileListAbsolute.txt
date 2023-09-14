@@ -1,0 +1,17 @@
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\Bussiness\bin\Debug\netstandard2.1\Bussiness.deps.json
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\Bussiness\bin\Debug\netstandard2.1\Bussiness.dll
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\Bussiness\bin\Debug\netstandard2.1\Bussiness.pdb
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\Bussiness\bin\Debug\netstandard2.1\Core.dll
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\Bussiness\bin\Debug\netstandard2.1\DataAccess.dll
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\Bussiness\bin\Debug\netstandard2.1\Entities.dll
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\Bussiness\bin\Debug\netstandard2.1\DataAccess.pdb
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\Bussiness\bin\Debug\netstandard2.1\Entities.pdb
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\Bussiness\bin\Debug\netstandard2.1\Core.pdb
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\Bussiness\obj\Debug\netstandard2.1\Bussiness.csproj.AssemblyReference.cache
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\Bussiness\obj\Debug\netstandard2.1\Bussiness.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\Bussiness\obj\Debug\netstandard2.1\Bussiness.AssemblyInfoInputs.cache
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\Bussiness\obj\Debug\netstandard2.1\Bussiness.AssemblyInfo.cs
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\Bussiness\obj\Debug\netstandard2.1\Bussiness.csproj.CoreCompileInputs.cache
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\Bussiness\obj\Debug\netstandard2.1\Bussiness.csproj.CopyComplete
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\Bussiness\obj\Debug\netstandard2.1\Bussiness.dll
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\Bussiness\obj\Debug\netstandard2.1\Bussiness.pdb

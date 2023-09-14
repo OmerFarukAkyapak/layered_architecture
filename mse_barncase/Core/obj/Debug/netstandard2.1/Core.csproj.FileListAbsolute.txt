@@ -1,0 +1,10 @@
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\Core\bin\Debug\netstandard2.1\Core.deps.json
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\Core\bin\Debug\netstandard2.1\Core.dll
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\Core\bin\Debug\netstandard2.1\Core.pdb
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\Core\obj\Debug\netstandard2.1\Core.csproj.AssemblyReference.cache
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\Core\obj\Debug\netstandard2.1\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\Core\obj\Debug\netstandard2.1\Core.AssemblyInfoInputs.cache
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\Core\obj\Debug\netstandard2.1\Core.AssemblyInfo.cs
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\Core\obj\Debug\netstandard2.1\Core.csproj.CoreCompileInputs.cache
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\Core\obj\Debug\netstandard2.1\Core.dll
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\Core\obj\Debug\netstandard2.1\Core.pdb

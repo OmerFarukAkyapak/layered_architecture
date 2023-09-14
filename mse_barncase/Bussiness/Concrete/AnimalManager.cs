@@ -1,4 +1,6 @@
 ﻿using Bussiness.Abstract;
+using Bussiness.Constant;
+using Core.Utilities.Result;
 using DataAccess.Abstact;
 using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
@@ -17,34 +19,37 @@ namespace Bussiness.Concrete
         {
             _animalDal = animalDal;
         }
-        public void Add(Animal animal)
+        public IResult Add(Animal animal)
         {
             _animalDal.Add(animal);
+            return new SuccessResult(Messages.AnimalAdded); 
         }
 
-        public void Delete(Animal animal)
+        public IResult Delete(Animal animal)
         {
             _animalDal.Delete(animal);
+            return new SuccessResult(Messages.AnimalDeleted);
         }
 
-        public Animal GetById(int animalId)
-        {       
-            return _animalDal.Get(p=> p.AnimalID == animalId);
-        }
-
-        public List<Animal> GetList()
+        public IDataResult<Animal> GetById(int animalId)
         {
-            return _animalDal.GetList().ToList();
+            return new SuccessDataResult<Animal>(_animalDal.Get(p => p.AnimalID == animalId));
         }
 
-        public List<Animal> GetListByTypes(int typeId)
+        public IDataResult<List<Animal>> GetList()
         {
-            return _animalDal.GetList(p => p.AnimalTypeID == typeId).ToList();
+            return new SuccessDataResult<List<Animal>>(_animalDal.GetList().ToList());
         }
 
-        public void Update(Animal animal)
+        public IDataResult<List<Animal>> GetListByTypes(int typeId)
+        {
+            return new SuccessDataResult<List<Animal>>(_animalDal.GetList(filter:p=>p.AnimalTypeID==typeId).ToList());
+        }
+
+        public IResult Update(Animal animal)
         {
             _animalDal.Update(animal);
+            return new SuccessResult(Messages.AnimalUpdated);
         }
     }
 }
