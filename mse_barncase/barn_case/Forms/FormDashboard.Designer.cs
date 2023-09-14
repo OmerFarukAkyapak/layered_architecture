@@ -114,6 +114,7 @@ namespace barn_case
             this.textBox7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox7.Location = new System.Drawing.Point(39, 405);
             this.textBox7.Name = "textBox7";
+            this.textBox7.ReadOnly = true;
             this.textBox7.Size = new System.Drawing.Size(184, 27);
             this.textBox7.TabIndex = 12;
             this.textBox7.Text = "5000";
@@ -133,6 +134,7 @@ namespace barn_case
             this.textBox6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox6.Location = new System.Drawing.Point(39, 272);
             this.textBox6.Name = "textBox6";
+            this.textBox6.ReadOnly = true;
             this.textBox6.Size = new System.Drawing.Size(184, 27);
             this.textBox6.TabIndex = 10;
             this.textBox6.Text = "25";
@@ -152,6 +154,7 @@ namespace barn_case
             this.textBox5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox5.Location = new System.Drawing.Point(39, 154);
             this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(184, 27);
             this.textBox5.TabIndex = 8;
             this.textBox5.Text = "30";
@@ -214,6 +217,7 @@ namespace barn_case
             this.textBox1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox1.Location = new System.Drawing.Point(32, 127);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(184, 27);
             this.textBox1.TabIndex = 6;
             this.textBox1.Text = "10000";
@@ -269,6 +273,7 @@ namespace barn_case
             this.textBox4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox4.Location = new System.Drawing.Point(38, 405);
             this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(184, 27);
             this.textBox4.TabIndex = 12;
             this.textBox4.Text = "20000";
@@ -288,6 +293,7 @@ namespace barn_case
             this.textBox3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox3.Location = new System.Drawing.Point(38, 272);
             this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(184, 27);
             this.textBox3.TabIndex = 10;
             this.textBox3.Text = "2";
@@ -307,6 +313,7 @@ namespace barn_case
             this.textBox2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox2.Location = new System.Drawing.Point(31, 154);
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(184, 27);
             this.textBox2.TabIndex = 8;
             this.textBox2.Text = "21";

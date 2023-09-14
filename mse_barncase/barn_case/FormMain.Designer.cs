@@ -32,16 +32,14 @@ namespace barn_case
             this.label1 = new System.Windows.Forms.Label();
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.pnlMenu = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnAnimal = new System.Windows.Forms.Button();
+            this.btnBarn = new System.Windows.Forms.Button();
+            this.btnProduct = new System.Windows.Forms.Button();
             this.btnHomePage = new System.Windows.Forms.Button();
             this.lblMenu = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.pnlHeader.SuspendLayout();
             this.pnlMenu.SuspendLayout();
-            this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -66,9 +64,9 @@ namespace barn_case
             // pnlMenu
             // 
             this.pnlMenu.BackColor = System.Drawing.Color.Yellow;
-            this.pnlMenu.Controls.Add(this.button4);
-            this.pnlMenu.Controls.Add(this.button3);
-            this.pnlMenu.Controls.Add(this.button2);
+            this.pnlMenu.Controls.Add(this.btnAnimal);
+            this.pnlMenu.Controls.Add(this.btnBarn);
+            this.pnlMenu.Controls.Add(this.btnProduct);
             this.pnlMenu.Controls.Add(this.btnHomePage);
             this.pnlMenu.Controls.Add(this.lblMenu);
             this.pnlMenu.Location = new System.Drawing.Point(12, 64);
@@ -76,35 +74,38 @@ namespace barn_case
             this.pnlMenu.Size = new System.Drawing.Size(200, 635);
             this.pnlMenu.TabIndex = 2;
             // 
-            // button4
+            // btnAnimal
             // 
-            this.button4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button4.Location = new System.Drawing.Point(27, 411);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(146, 48);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Barn Details";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnAnimal.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAnimal.Location = new System.Drawing.Point(27, 235);
+            this.btnAnimal.Name = "btnAnimal";
+            this.btnAnimal.Size = new System.Drawing.Size(146, 48);
+            this.btnAnimal.TabIndex = 6;
+            this.btnAnimal.Text = "Animal";
+            this.btnAnimal.UseVisualStyleBackColor = true;
+            this.btnAnimal.Click += new System.EventHandler(this.btnAnimal_Click);
             // 
-            // button3
+            // btnBarn
             // 
-            this.button3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button3.Location = new System.Drawing.Point(27, 319);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(146, 48);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Product";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnBarn.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnBarn.Location = new System.Drawing.Point(27, 411);
+            this.btnBarn.Name = "btnBarn";
+            this.btnBarn.Size = new System.Drawing.Size(146, 48);
+            this.btnBarn.TabIndex = 5;
+            this.btnBarn.Text = "Barn Details";
+            this.btnBarn.UseVisualStyleBackColor = true;
+            this.btnBarn.Click += new System.EventHandler(this.btnBarn_Click);
             // 
-            // button2
+            // btnProduct
             // 
-            this.button2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(27, 231);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(146, 48);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Animal";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnProduct.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnProduct.Location = new System.Drawing.Point(27, 319);
+            this.btnProduct.Name = "btnProduct";
+            this.btnProduct.Size = new System.Drawing.Size(146, 48);
+            this.btnProduct.TabIndex = 4;
+            this.btnProduct.Text = "Product";
+            this.btnProduct.UseVisualStyleBackColor = true;
+            this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click);
             // 
             // btnHomePage
             // 
@@ -129,22 +130,11 @@ namespace barn_case
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Location = new System.Drawing.Point(219, 64);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1003, 635);
             this.tabControl1.TabIndex = 3;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(995, 609);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // FormMain
             // 
@@ -161,7 +151,6 @@ namespace barn_case
             this.pnlHeader.PerformLayout();
             this.pnlMenu.ResumeLayout(false);
             this.pnlMenu.PerformLayout();
-            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -172,12 +161,11 @@ namespace barn_case
         private System.Windows.Forms.Panel pnlHeader;
         private System.Windows.Forms.Panel pnlMenu;
         private System.Windows.Forms.Label lblMenu;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnBarn;
+        private System.Windows.Forms.Button btnProduct;
         private System.Windows.Forms.Button btnHomePage;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.Button btnAnimal;
     }
 }
 

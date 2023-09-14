@@ -9,3 +9,6 @@ C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\b
 C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\barn_case\obj\Debug\BarnApp.csproj.CoreCompileInputs.cache
 C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\barn_case\obj\Debug\barn_case.exe
 C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\barn_case\obj\Debug\barn_case.pdb
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\barn_case\obj\Debug\barn_case.Forms.FormAnimalPage.resources
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\barn_case\obj\Debug\barn_case.Forms.FormBarnDetail.resources
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\barn_case\obj\Debug\barn_case.Forms.FormProductPage.resources

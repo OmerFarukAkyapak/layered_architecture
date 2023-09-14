@@ -1,4 +1,5 @@
-﻿using System;
+﻿using barn_case.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,12 +17,6 @@ namespace barn_case
         {
             InitializeComponent();
         }
-
-        private void btnHomePage_Click(object sender, EventArgs e)
-        {
-            OpenTabPage<FormDashboard>("Home Page");
-        }
-
 
         // Opens a page or selects it if already opened.
         private void OpenTabPage<T>(string tabPageName) where T : Form, new()
@@ -47,6 +42,26 @@ namespace barn_case
             tabControl1.SelectedTab = newTabPage;
 
             frm.Show();
+        }
+
+        private void btnHomePage_Click(object sender, EventArgs e)
+        {
+            OpenTabPage<FormDashboard>("Home Page");
+        }
+
+        private void btnAnimal_Click(object sender, EventArgs e)
+        {
+            OpenTabPage<FormAnimalPage>("Animal Page");
+        }
+
+        private void btnProduct_Click(object sender, EventArgs e)
+        {
+            OpenTabPage<FormProductPage>("Prodcut Page");
+        }
+
+        private void btnBarn_Click(object sender, EventArgs e)
+        {
+            OpenTabPage<FormBarnDetail>("Barn Details Page");
         }
     }
 }
