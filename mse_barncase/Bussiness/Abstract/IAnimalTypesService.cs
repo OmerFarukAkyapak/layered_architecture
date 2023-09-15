@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Bussiness.Abstract
 {
-    class IAnimalTypesService
+    public class IAnimalTypesService
     {
     }
 }

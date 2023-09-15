@@ -13,8 +13,11 @@ namespace DataAccess.Concrete.EntityFramework.Contexts
             optionsBuilder.UseSqlServer(connectionString: @"Server=(localdb)\mssqllocaldb;Database=Barn;Trusted_Connection=true");
         }
 
-        public DbSet<Animal> Animals { get; set; }
+        public DbSet<Animal> Animal { get; set; }
         public DbSet<Barn> Farm { get; set; }
-        public DbSet<Product> Products { get; set; }
+        public DbSet<Product> Product { get; set; }
+        public DbSet<AnimalTypes> AnimalTypes { get; set; }
+        public DbSet<AnimalGenders> AnimalGenders { get; set; }
+
     }
 }
