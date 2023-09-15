@@ -16,6 +16,15 @@ namespace Bussiness.Concrete
         {
             _barnDal = barnDal;
         }
+
+        public IDataResult<Barn> GetAmount()
+        {
+            var farmAmount = _barnDal.Get(f => f.FarmID == 1);
+
+            return new SuccessDataResult<Barn>(farmAmount.FarmAmount.ToString());
+
+        }
+
         public IDataResult<Barn> GetById(int farmId)
         {
             return new SuccessDataResult<Barn>(_barnDal.Get(p => p.FarmID == farmId));

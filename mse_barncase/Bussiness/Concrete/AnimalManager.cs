@@ -21,6 +21,10 @@ namespace Bussiness.Concrete
         }
         public IResult Add(Animal animal)
         {
+            // Buy a new animal
+            animal.AnimalIsAlive = true;
+            animal.AnimalIsSold = false;
+
             _animalDal.Add(animal);
             return new SuccessResult(Messages.AnimalAdded); 
         }

@@ -9,5 +9,6 @@ namespace Bussiness.Abstract
     public interface IBarnService
     {
         IDataResult<Barn> GetById(int farmId);
+        IDataResult<Barn> GetAmount();
     }
 }
