@@ -10,10 +10,11 @@ namespace DataAccess.Concrete.EntityFramework.Contexts
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(connectionString:@"Server=(localdb)\mssqllocaldb;Database=Barn;Trusted_Connection=true");
+            optionsBuilder.UseSqlServer(connectionString: @"Server=(localdb)\mssqllocaldb;Database=Barn;Trusted_Connection=true");
         }
 
-        public DbSet<Animal> Animal { get; set; }
+        public DbSet<Animal> Animals { get; set; }
         public DbSet<Barn> Farm { get; set; }
+        public DbSet<Product> Products { get; set; }
     }
 }

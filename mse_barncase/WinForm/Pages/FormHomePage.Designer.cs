@@ -31,24 +31,24 @@ namespace WinForm.Pages
         {
             this.pnlHome = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lblDateDay = new System.Windows.Forms.Label();
+            this.lblDateNum = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtProductWorth = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtAnimalWorth = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBarnAmount = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtProductCount = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtAnimalCount = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -88,33 +88,34 @@ namespace WinForm.Pages
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.label11);
-            this.panel5.Controls.Add(this.label10);
+            this.panel5.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel5.Controls.Add(this.lblDateDay);
+            this.panel5.Controls.Add(this.lblDateNum);
             this.panel5.Controls.Add(this.pictureBox5);
-            this.panel5.Location = new System.Drawing.Point(667, 375);
+            this.panel5.Location = new System.Drawing.Point(667, 363);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(243, 269);
             this.panel5.TabIndex = 4;
             // 
-            // label11
+            // lblDateDay
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(81, 211);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(81, 29);
-            this.label11.TabIndex = 6;
-            this.label11.Text = "Cuma";
+            this.lblDateDay.AutoSize = true;
+            this.lblDateDay.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblDateDay.Location = new System.Drawing.Point(81, 211);
+            this.lblDateDay.Name = "lblDateDay";
+            this.lblDateDay.Size = new System.Drawing.Size(81, 29);
+            this.lblDateDay.TabIndex = 6;
+            this.lblDateDay.Text = "Cuma";
             // 
-            // label10
+            // lblDateNum
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.Location = new System.Drawing.Point(47, 149);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(149, 29);
-            this.label10.TabIndex = 5;
-            this.label10.Text = "14.08.2001";
+            this.lblDateNum.AutoSize = true;
+            this.lblDateNum.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblDateNum.Location = new System.Drawing.Point(47, 149);
+            this.lblDateNum.Name = "lblDateNum";
+            this.lblDateNum.Size = new System.Drawing.Size(149, 29);
+            this.lblDateNum.TabIndex = 5;
+            this.lblDateNum.Text = "14.08.2001";
             // 
             // pictureBox5
             // 
@@ -128,24 +129,25 @@ namespace WinForm.Pages
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.textBox5);
+            this.panel6.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel6.Controls.Add(this.txtProductWorth);
             this.panel6.Controls.Add(this.label9);
-            this.panel6.Controls.Add(this.textBox4);
+            this.panel6.Controls.Add(this.txtAnimalWorth);
             this.panel6.Controls.Add(this.label8);
-            this.panel6.Location = new System.Drawing.Point(345, 375);
+            this.panel6.Location = new System.Drawing.Point(345, 363);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(243, 269);
             this.panel6.TabIndex = 3;
             // 
-            // textBox5
+            // txtProductWorth
             // 
-            this.textBox5.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
-            this.textBox5.Location = new System.Drawing.Point(44, 211);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(145, 36);
-            this.textBox5.TabIndex = 10;
-            this.textBox5.Text = "3000";
+            this.txtProductWorth.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
+            this.txtProductWorth.Location = new System.Drawing.Point(44, 211);
+            this.txtProductWorth.Name = "txtProductWorth";
+            this.txtProductWorth.ReadOnly = true;
+            this.txtProductWorth.Size = new System.Drawing.Size(145, 36);
+            this.txtProductWorth.TabIndex = 10;
+            this.txtProductWorth.Text = "3000";
             // 
             // label9
             // 
@@ -157,15 +159,15 @@ namespace WinForm.Pages
             this.label9.TabIndex = 9;
             this.label9.Text = "Product Worth";
             // 
-            // textBox4
+            // txtAnimalWorth
             // 
-            this.textBox4.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
-            this.textBox4.Location = new System.Drawing.Point(44, 87);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(145, 36);
-            this.textBox4.TabIndex = 8;
-            this.textBox4.Text = "7000";
+            this.txtAnimalWorth.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
+            this.txtAnimalWorth.Location = new System.Drawing.Point(44, 87);
+            this.txtAnimalWorth.Name = "txtAnimalWorth";
+            this.txtAnimalWorth.ReadOnly = true;
+            this.txtAnimalWorth.Size = new System.Drawing.Size(145, 36);
+            this.txtAnimalWorth.TabIndex = 8;
+            this.txtAnimalWorth.Text = "7000";
             // 
             // label8
             // 
@@ -179,23 +181,24 @@ namespace WinForm.Pages
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.textBox1);
+            this.panel7.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel7.Controls.Add(this.txtBarnAmount);
             this.panel7.Controls.Add(this.label4);
             this.panel7.Controls.Add(this.pictureBox4);
-            this.panel7.Location = new System.Drawing.Point(32, 375);
+            this.panel7.Location = new System.Drawing.Point(32, 363);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(243, 269);
             this.panel7.TabIndex = 2;
             // 
-            // textBox1
+            // txtBarnAmount
             // 
-            this.textBox1.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
-            this.textBox1.Location = new System.Drawing.Point(27, 192);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(198, 36);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.Text = "10000,00";
+            this.txtBarnAmount.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
+            this.txtBarnAmount.Location = new System.Drawing.Point(27, 192);
+            this.txtBarnAmount.Name = "txtBarnAmount";
+            this.txtBarnAmount.ReadOnly = true;
+            this.txtBarnAmount.Size = new System.Drawing.Size(198, 36);
+            this.txtBarnAmount.TabIndex = 4;
+            this.txtBarnAmount.Text = "10000,00";
             // 
             // label4
             // 
@@ -219,7 +222,8 @@ namespace WinForm.Pages
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.textBox3);
+            this.panel4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel4.Controls.Add(this.txtProductCount);
             this.panel4.Controls.Add(this.label6);
             this.panel4.Controls.Add(this.pictureBox3);
             this.panel4.Location = new System.Drawing.Point(667, 29);
@@ -227,15 +231,15 @@ namespace WinForm.Pages
             this.panel4.Size = new System.Drawing.Size(243, 268);
             this.panel4.TabIndex = 1;
             // 
-            // textBox3
+            // txtProductCount
             // 
-            this.textBox3.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
-            this.textBox3.Location = new System.Drawing.Point(51, 191);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(145, 36);
-            this.textBox3.TabIndex = 6;
-            this.textBox3.Text = "32";
+            this.txtProductCount.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
+            this.txtProductCount.Location = new System.Drawing.Point(51, 191);
+            this.txtProductCount.Name = "txtProductCount";
+            this.txtProductCount.ReadOnly = true;
+            this.txtProductCount.Size = new System.Drawing.Size(145, 36);
+            this.txtProductCount.TabIndex = 6;
+            this.txtProductCount.Text = "32";
             // 
             // label6
             // 
@@ -259,7 +263,8 @@ namespace WinForm.Pages
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.textBox2);
+            this.panel3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel3.Controls.Add(this.txtAnimalCount);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Location = new System.Drawing.Point(345, 29);
@@ -267,15 +272,15 @@ namespace WinForm.Pages
             this.panel3.Size = new System.Drawing.Size(243, 268);
             this.panel3.TabIndex = 1;
             // 
-            // textBox2
+            // txtAnimalCount
             // 
-            this.textBox2.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
-            this.textBox2.Location = new System.Drawing.Point(52, 191);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(145, 36);
-            this.textBox2.TabIndex = 6;
-            this.textBox2.Text = "12";
+            this.txtAnimalCount.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
+            this.txtAnimalCount.Location = new System.Drawing.Point(52, 191);
+            this.txtAnimalCount.Name = "txtAnimalCount";
+            this.txtAnimalCount.ReadOnly = true;
+            this.txtAnimalCount.Size = new System.Drawing.Size(145, 36);
+            this.txtAnimalCount.TabIndex = 6;
+            this.txtAnimalCount.Text = "12";
             // 
             // label5
             // 
@@ -299,6 +304,7 @@ namespace WinForm.Pages
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label1);
@@ -407,18 +413,18 @@ namespace WinForm.Pages
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtProductWorth;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtAnimalWorth;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBarnAmount;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtProductCount;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtAnimalCount;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lblDateDay;
+        private System.Windows.Forms.Label lblDateNum;
     }
 }

@@ -31,15 +31,15 @@ namespace WinForm.Pages
         {
             this.pnlProduct = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.btnHomePage = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
@@ -75,6 +75,16 @@ namespace WinForm.Pages
             this.panel2.Size = new System.Drawing.Size(450, 654);
             this.panel2.TabIndex = 1;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label10.Location = new System.Drawing.Point(122, 463);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(175, 23);
+            this.label10.TabIndex = 21;
+            this.label10.Text = "CURRENT BALANCE";
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -84,6 +94,14 @@ namespace WinForm.Pages
             this.label9.Size = new System.Drawing.Size(82, 23);
             this.label9.TabIndex = 25;
             this.label9.Text = "Amount:";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
+            this.textBox4.Location = new System.Drawing.Point(126, 489);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(171, 36);
+            this.textBox4.TabIndex = 20;
             // 
             // textBox3
             // 
@@ -141,24 +159,6 @@ namespace WinForm.Pages
             this.panel1.Size = new System.Drawing.Size(462, 654);
             this.panel1.TabIndex = 0;
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.Location = new System.Drawing.Point(122, 463);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(175, 23);
-            this.label10.TabIndex = 21;
-            this.label10.Text = "CURRENT BALANCE";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
-            this.textBox4.Location = new System.Drawing.Point(126, 489);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(171, 36);
-            this.textBox4.TabIndex = 20;
-            // 
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -166,7 +166,7 @@ namespace WinForm.Pages
             this.Column1});
             this.dataGridView2.Location = new System.Drawing.Point(13, 56);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(434, 582);
+            this.dataGridView2.Size = new System.Drawing.Size(434, 554);
             this.dataGridView2.TabIndex = 6;
             // 
             // Column1

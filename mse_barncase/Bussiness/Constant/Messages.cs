@@ -10,5 +10,11 @@ namespace Bussiness.Constant
         public static string AnimalDeleted = "Animal delete is successful";
         public static string AnimalUpdated = "Animal update is successful";
 
+        public static string ProductAdded = "Product add is successful";
+        public static string ProductDeleted = "Product delete is successful";
+        public static string ProductUpdated = "Product update is successful";
+
+
+
     }
 }

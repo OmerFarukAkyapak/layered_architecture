@@ -43,7 +43,7 @@ namespace Bussiness.Concrete
 
         public IDataResult<List<Animal>> GetListByTypes(int typeId)
         {
-            return new SuccessDataResult<List<Animal>>(_animalDal.GetList(filter:p=>p.AnimalTypeID==typeId).ToList());
+            return new SuccessDataResult<List<Animal>>(_animalDal.GetList().Where(a => a.AnimalTypeID == typeId).ToList());
         }
 
         public IResult Update(Animal animal)
