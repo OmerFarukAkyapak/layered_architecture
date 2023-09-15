@@ -238,7 +238,7 @@ namespace WinForm.Pages
             this.txtProductCount.Name = "txtProductCount";
             this.txtProductCount.ReadOnly = true;
             this.txtProductCount.Size = new System.Drawing.Size(145, 36);
-            this.txtProductCount.TabIndex = 6;
+            this.txtProductCount.TabIndex = 22;
             this.txtProductCount.Text = "32";
             // 
             // label6

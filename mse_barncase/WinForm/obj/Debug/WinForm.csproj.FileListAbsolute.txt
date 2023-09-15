@@ -31,3 +31,11 @@ C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\W
 C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\DevExpress.Pdf.v22.2.Drawing.xml
 C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\obj\Debug\WinForm.exe.licenses
 C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\obj\Debug\WinForm.csproj.CopyComplete
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\Bussiness.dll
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\Core.dll
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\Entities.dll
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\DataAccess.dll
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\Bussiness.pdb
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\Core.pdb
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\Entities.pdb
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\DataAccess.pdb
