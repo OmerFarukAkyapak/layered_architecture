@@ -146,14 +146,6 @@
       <Project>{2B0B1477-F736-4DA0-BF25-95EB3EC3166E}</Project>
       <Name>Bussiness</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Core\Core.csproj">
-      <Project>{FB01EF3B-1B13-4522-865E-C8DA3E9A9C5F}</Project>
-      <Name>Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
-      <Project>{BED4E721-CD00-422C-86FD-F15DDAF7FAC5}</Project>
-      <Name>DataAccess</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Entities\Entities.csproj">
       <Project>{F5B9305A-DFDD-46C3-861B-E428E3C56C29}</Project>
       <Name>Entities</Name>

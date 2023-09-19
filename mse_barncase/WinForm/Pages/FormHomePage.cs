@@ -1,7 +1,5 @@
 ﻿using Bussiness.Abstract;
 using Bussiness.Concrete;
-using Core.Utilities.Result;
-using DataAccess.Abstact;
 using Entities.Concrete;
 using System;
 using System.Collections.Generic;
@@ -23,7 +21,7 @@ namespace WinForm.Pages
         public FormHomePage()
         {
             InitializeComponent();
-            //_barnService = barnService;
+            _barnService = new BarnManager() ;
 
             string dateNum = date.ToString("dd.MM.yyyy");
             string dateDay = date.ToString("dddd");
