@@ -1,6 +1,5 @@
 ﻿using Bussiness.Abstract;
 using Bussiness.Concrete;
-using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,30 +14,21 @@ namespace WinForm.Pages
 {
     public partial class FormHomePage : Form
     {
-        private IBarnService _barnService;
+        private BarnManager barnManager;
+        
         DateTime date = DateTime.Now;
 
         public FormHomePage()
         {
             InitializeComponent();
-            _barnService = new BarnManager() ;
+
+
 
             string dateNum = date.ToString("dd.MM.yyyy");
             string dateDay = date.ToString("dddd");
             lblDateNum.Text = dateNum.ToString();
             lblDateDay.Text = dateDay.ToString();
 
-
-            //IDataResult<Barn> barnAmount = _barnService.GetAmount();
-            //if (barnAmount.Success)
-            //{
-            //    Barn barn = barnAmount.Data;
-            //    //txtBarnAmount.Text = barn.FarmAmount.ToString();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Barn miktarı alınamadı.");
-            //}
         }
     }
 }

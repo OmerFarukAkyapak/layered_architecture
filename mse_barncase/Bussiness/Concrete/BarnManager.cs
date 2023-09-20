@@ -19,21 +19,18 @@ namespace Bussiness.Concrete
 
         public IDataResult<Barn> GetAmount()
         {
+            Console.WriteLine("Get Amount basladi");
             var farmAmount = _barnDal.Get(f => f.FarmID == 1);
+            Console.WriteLine(farmAmount.ToString());
+            if (farmAmount != null)
+            {
+                return new SuccessDataResult<Barn>(farmAmount.FarmAmount.ToString());
 
-            return new SuccessDataResult<Barn>(farmAmount.FarmAmount.ToString());
-
-            //var farmAmount = _barnDal.Get(f => f.FarmID == 1);
-
-            //if (farmAmount != null)
-            //{
-            //    decimal amount = farmAmount.FarmAmount;
-            //    return new SuccessDataResult<Barn>(farmAmount);
-            //}
-            //else
-            //{
-            //    return new ErrorDataResult<Barn>("Barn miktarı bulunamadı.");
-            //}
+            }
+            else
+            {
+                return new ErrorDataResult<Barn>("Barn miktarı bulunamadı.");
+            }
 
         }
 
