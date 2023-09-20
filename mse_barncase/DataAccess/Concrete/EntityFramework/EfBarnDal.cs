@@ -8,7 +8,7 @@ using System.Text;
 
 namespace DataAccess.Concrete.EntityFramework
 {
-    class EfBarnDal : EfEntityRepositoryBase<Barn, BarnContext>, IBarnDal
+    public class EfBarnDal : EfEntityRepositoryBase<Barn, BarnContext>, IBarnDal
     {
     }
 }

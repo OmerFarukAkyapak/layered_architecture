@@ -374,6 +374,7 @@ namespace WinForm.Pages
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormHomePage";
             this.Text = "FormHomePage";
+            this.Load += new System.EventHandler(this.FormHomePage_Load);
             this.pnlHome.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();

@@ -1,5 +1,7 @@
 ﻿using Bussiness.Abstract;
 using Bussiness.Concrete;
+using Bussiness.DependencyResolvers;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,22 +16,39 @@ namespace WinForm.Pages
 {
     public partial class FormHomePage : Form
     {
-        //private IBarnService _barnService;
-        
+        private IBarnService _barnService;
+        private IServiceProvider _serviceProvider;
+
         DateTime date = DateTime.Now;
 
         public FormHomePage()
         {
             InitializeComponent();
+            //DI.RegisterServices();
+            _serviceProvider = DI.ServiceProvider;
 
-            //barnService = _barnService;
+        }
 
+        private void FormHomePage_Load(object sender, EventArgs e)
+        {
             string dateNum = date.ToString("dd.MM.yyyy");
             string dateDay = date.ToString("dddd");
             lblDateNum.Text = dateNum.ToString();
             lblDateDay.Text = dateDay.ToString();
 
-            //txtBarnAmount.Text = barnService.GetAmount();
+
+            if (_serviceProvider != null)
+            {
+                _barnService = _serviceProvider.GetRequiredService<IBarnService>();
+
+                var barnAmount = _barnService.GetAmount();
+
+                txtBarnAmount.Text = barnAmount.Data.FarmAmount.ToString();
+            }
+            else
+            {
+                txtBarnAmount.Text = "100";
+            }
         }
     }
 }
