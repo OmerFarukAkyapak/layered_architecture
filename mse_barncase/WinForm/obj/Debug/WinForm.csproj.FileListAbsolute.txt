@@ -1,4 +1,4 @@
-C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\DevExpress.Pdf.v22.2.Core.dll
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\DevExpress.Utils.v22.2.dll
 C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\WinForm.exe.config
 C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\WinForm.exe
 C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\WinForm.pdb
@@ -9,7 +9,6 @@ C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\W
 C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\DevExpress.Drawing.v22.2.dll
 C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\DevExpress.Printing.v22.2.Core.dll
 C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\DevExpress.Sparkline.v22.2.Core.dll
-C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\DevExpress.Utils.v22.2.dll
 C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\DevExpress.XtraEditors.v22.2.dll
 C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\Entities.dll
 C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
@@ -18,6 +17,7 @@ C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\W
 C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\System.Threading.Tasks.Extensions.dll
 C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\DataAccess.dll
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\DevExpress.Pdf.v22.2.Core.dll
 C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\DevExpress.Pdf.v22.2.Drawing.dll
 C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\Bussiness.pdb
 C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\Core.pdb
