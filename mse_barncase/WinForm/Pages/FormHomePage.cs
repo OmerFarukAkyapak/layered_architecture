@@ -24,8 +24,7 @@ namespace WinForm.Pages
         public FormHomePage()
         {
             InitializeComponent();
-            //DI.RegisterServices();
-            _serviceProvider = DI.ServiceProvider;
+            _serviceProvider = DependencyInjection.ServiceProvider;
 
         }
 

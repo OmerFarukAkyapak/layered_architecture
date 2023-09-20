@@ -9,12 +9,13 @@ using System.Text;
 
 namespace Bussiness.DependencyResolvers
 {
-    public class DI
+    public class DependencyInjection
     {
         public static IServiceProvider ServiceProvider { get;  set; }
-        public static void RegisterServices()
+        public static void ConfigureServices(ServiceCollection services)
         {
-            var services = new ServiceCollection();
+            services.AddScoped<IBarnService, BarnManager>()
+                .AddSingleton<IBarnDal, EfBarnDal>();
 
 
             services.AddSingleton<IAnimalService, AnimalManager>();
