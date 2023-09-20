@@ -45,7 +45,7 @@ namespace WinForm
 
         private void btnHomePage_Click(object sender, EventArgs e)
         {
-            OpenTabPage < FormHomePage > ("Home Page");
+            OpenTabPage <FormHomePage> ("Home Page");
         }
 
         private void btnAnimalPage_Click(object sender, EventArgs e)

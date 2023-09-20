@@ -14,7 +14,7 @@ namespace WinForm.Pages
 {
     public partial class FormHomePage : Form
     {
-        private BarnManager barnManager;
+        //private IBarnService _barnService;
         
         DateTime date = DateTime.Now;
 
@@ -22,13 +22,14 @@ namespace WinForm.Pages
         {
             InitializeComponent();
 
-
+            //barnService = _barnService;
 
             string dateNum = date.ToString("dd.MM.yyyy");
             string dateDay = date.ToString("dddd");
             lblDateNum.Text = dateNum.ToString();
             lblDateDay.Text = dateDay.ToString();
 
+            //txtBarnAmount.Text = barnService.GetAmount();
         }
     }
 }
