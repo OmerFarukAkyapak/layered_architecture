@@ -17,7 +17,6 @@ namespace WinForm.Pages
     public partial class FormHomePage : Form
     {
         private IBarnService _barnService;
-        //private IServiceProvider _serviceProvider;
 
         DateTime date = DateTime.Now;
 
@@ -25,17 +24,15 @@ namespace WinForm.Pages
         {
             InitializeComponent();
             _barnService = DependencyInjection.ConfigureServices().GetRequiredService<IBarnService>();
-            FormLoad(/*_serviceProvider*/);
+            FormLoad();
 
         }
-        private void FormLoad(/*IServiceProvider serviceProvider*/)
+        private void FormLoad()
         {
                 string dateNum = date.ToString("dd.MM.yyyy");
                 string dateDay = date.ToString("dddd");
                 lblDateNum.Text = dateNum.ToString();
                 lblDateDay.Text = dateDay.ToString();
-
-                //_barnService = serviceProvider.GetRequiredService<IBarnService>();
 
                 var barnAmount = _barnService.GetAmount();
 

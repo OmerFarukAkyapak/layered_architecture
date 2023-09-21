@@ -24,7 +24,7 @@ namespace Bussiness.Concrete
             Console.WriteLine(farmAmount.ToString());
             if (farmAmount != null)
             {
-                return new SuccessDataResult<Barn>(farmAmount.FarmAmount.ToString());
+                return new SuccessDataResult<Barn>(data: farmAmount);
 
             }
             else

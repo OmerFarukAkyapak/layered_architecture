@@ -15,12 +15,9 @@ namespace WinForm
 {
     public partial class FormMain : Form
     {
-        //private IServiceProvider _serviceProvider;
-
         public FormMain()
         {
             InitializeComponent();
-            //_serviceProvider = DependencyInjection.ConfigureServices();
         }
 
         // Opens a page or selects it if already opened.
@@ -35,7 +32,6 @@ namespace WinForm
                 }
             }
 
-            //T frm = _serviceProvider.GetRequiredService<T>();
             T frm = new T();
             frm.TopLevel = false;
             frm.Dock = DockStyle.Fill;
@@ -52,7 +48,6 @@ namespace WinForm
 
         private void btnHomePage_Click(object sender, EventArgs e)
         {
-            //var form = _serviceProvider.GetRequiredService<FormHomePage>();
             OpenTabPage <FormHomePage> ("Home Page");
         }
 
