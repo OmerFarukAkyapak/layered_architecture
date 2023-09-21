@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Bussiness.DependencyResolvers;
+using Microsoft.Extensions.DependencyInjection;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,10 +15,14 @@ namespace WinForm
 {
     public partial class FormMain : Form
     {
+        private IServiceProvider _serviceProvider;
+
         public FormMain()
         {
             InitializeComponent();
+            _serviceProvider = DependencyInjection.ConfigureServices();
         }
+
         // Opens a page or selects it if already opened.
         private void OpenTabPage<T>(string tabPageName) where T : Form, new()
         {
@@ -29,7 +35,7 @@ namespace WinForm
                 }
             }
 
-            T frm = new T();
+            T frm = _serviceProvider.GetRequiredService<T>();
             frm.TopLevel = false;
             frm.Dock = DockStyle.Fill;
 
@@ -45,6 +51,7 @@ namespace WinForm
 
         private void btnHomePage_Click(object sender, EventArgs e)
         {
+            //var form = _serviceProvider.GetRequiredService<FormHomePage>();
             OpenTabPage <FormHomePage> ("Home Page");
         }
 

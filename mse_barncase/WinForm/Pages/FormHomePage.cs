@@ -24,29 +24,28 @@ namespace WinForm.Pages
         public FormHomePage()
         {
             InitializeComponent();
-            _serviceProvider = DependencyInjection.ServiceProvider;
+            
 
         }
 
         private void FormHomePage_Load(object sender, EventArgs e)
         {
-            string dateNum = date.ToString("dd.MM.yyyy");
-            string dateDay = date.ToString("dddd");
-            lblDateNum.Text = dateNum.ToString();
-            lblDateDay.Text = dateDay.ToString();
-
-
-            if (_serviceProvider != null)
+            try
             {
+                string dateNum = date.ToString("dd.MM.yyyy");
+                string dateDay = date.ToString("dddd");
+                lblDateNum.Text = dateNum.ToString();
+                lblDateDay.Text = dateDay.ToString();
+
                 _barnService = _serviceProvider.GetRequiredService<IBarnService>();
 
                 var barnAmount = _barnService.GetAmount();
 
                 txtBarnAmount.Text = barnAmount.Data.FarmAmount.ToString();
             }
-            else
+            catch (Exception ex)
             {
-                txtBarnAmount.Text = "100";
+                MessageBox.Show("Hata oluştu: " + ex.Message);
             }
         }
     }

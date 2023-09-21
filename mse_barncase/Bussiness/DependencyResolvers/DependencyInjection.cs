@@ -11,12 +11,13 @@ namespace Bussiness.DependencyResolvers
 {
     public class DependencyInjection
     {
-        public static IServiceProvider ServiceProvider { get;  set; }
-        public static void ConfigureServices(ServiceCollection services)
+        //public static IServiceProvider ServiceProvider { get;  set; }
+        public static IServiceProvider ConfigureServices()
         {
-            services.AddScoped<IBarnService, BarnManager>()
-                .AddSingleton<IBarnDal, EfBarnDal>();
+            var services = new ServiceCollection();
 
+            //services.AddScoped<IBarnService, BarnManager>()
+            //    .AddSingleton<IBarnDal, EfBarnDal>();
 
             services.AddSingleton<IAnimalService, AnimalManager>();
             services.AddSingleton<IAnimalDal, EfAnimalDal>();
@@ -25,7 +26,8 @@ namespace Bussiness.DependencyResolvers
             services.AddSingleton<IBarnService, BarnManager>();
             services.AddSingleton<IBarnDal, EfBarnDal>();
 
-            ServiceProvider = services.BuildServiceProvider();
+            var serviceProvider = services.BuildServiceProvider();
+            return serviceProvider;
 
         }
         
