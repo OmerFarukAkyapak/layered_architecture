@@ -16,7 +16,7 @@ namespace WinForm.Pages
 {
     public partial class FormHomePage : Form
     {
-        //private IBarnService _barnService;
+        private IBarnService _barnService;
         //private IServiceProvider _serviceProvider;
 
         DateTime date = DateTime.Now;
@@ -24,6 +24,7 @@ namespace WinForm.Pages
         public FormHomePage()
         {
             InitializeComponent();
+            _barnService = DependencyInjection.ConfigureServices().GetRequiredService<IBarnService>();
             FormLoad(/*_serviceProvider*/);
 
         }
@@ -38,9 +39,9 @@ namespace WinForm.Pages
 
                 //_barnService = serviceProvider.GetRequiredService<IBarnService>();
 
-                //var barnAmount = _barnService.GetAmount();
+                var barnAmount = _barnService.GetAmount();
 
-                //txtBarnAmount.Text = barnAmount.Data.FarmAmount.ToString();
+                txtBarnAmount.Text = barnAmount.Data.FarmAmount.ToString();
             }
             catch (Exception ex)
             {
