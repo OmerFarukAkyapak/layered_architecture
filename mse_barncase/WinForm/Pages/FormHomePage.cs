@@ -30,8 +30,6 @@ namespace WinForm.Pages
         }
         private void FormLoad(/*IServiceProvider serviceProvider*/)
         {
-            try
-            {
                 string dateNum = date.ToString("dd.MM.yyyy");
                 string dateDay = date.ToString("dddd");
                 lblDateNum.Text = dateNum.ToString();
@@ -42,6 +40,8 @@ namespace WinForm.Pages
                 var barnAmount = _barnService.GetAmount();
 
                 txtBarnAmount.Text = barnAmount.Data.FarmAmount.ToString();
+            try
+            {
             }
             catch (Exception ex)
             {
