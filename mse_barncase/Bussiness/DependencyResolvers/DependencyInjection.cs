@@ -16,9 +16,6 @@ namespace Bussiness.DependencyResolvers
         {
             var services = new ServiceCollection();
 
-            //services.AddScoped<IBarnService, BarnManager>()
-            //    .AddSingleton<IBarnDal, EfBarnDal>();
-
             services.AddSingleton<IAnimalService, AnimalManager>();
             services.AddSingleton<IAnimalDal, EfAnimalDal>();
             services.AddSingleton<IProductService, ProductManager>();
@@ -27,6 +24,7 @@ namespace Bussiness.DependencyResolvers
             services.AddSingleton<IBarnDal, EfBarnDal>();
 
             var serviceProvider = services.BuildServiceProvider();
+            
             return serviceProvider;
 
         }

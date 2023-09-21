@@ -16,19 +16,18 @@ namespace WinForm.Pages
 {
     public partial class FormHomePage : Form
     {
-        private IBarnService _barnService;
-        private IServiceProvider _serviceProvider;
+        //private IBarnService _barnService;
+        //private IServiceProvider _serviceProvider;
 
         DateTime date = DateTime.Now;
 
         public FormHomePage()
         {
             InitializeComponent();
-            
+            FormLoad(/*_serviceProvider*/);
 
         }
-
-        private void FormHomePage_Load(object sender, EventArgs e)
+        private void FormLoad(/*IServiceProvider serviceProvider*/)
         {
             try
             {
@@ -37,11 +36,11 @@ namespace WinForm.Pages
                 lblDateNum.Text = dateNum.ToString();
                 lblDateDay.Text = dateDay.ToString();
 
-                _barnService = _serviceProvider.GetRequiredService<IBarnService>();
+                //_barnService = serviceProvider.GetRequiredService<IBarnService>();
 
-                var barnAmount = _barnService.GetAmount();
+                //var barnAmount = _barnService.GetAmount();
 
-                txtBarnAmount.Text = barnAmount.Data.FarmAmount.ToString();
+                //txtBarnAmount.Text = barnAmount.Data.FarmAmount.ToString();
             }
             catch (Exception ex)
             {

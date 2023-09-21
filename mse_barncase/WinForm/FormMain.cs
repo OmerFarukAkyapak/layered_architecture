@@ -15,12 +15,12 @@ namespace WinForm
 {
     public partial class FormMain : Form
     {
-        private IServiceProvider _serviceProvider;
+        //private IServiceProvider _serviceProvider;
 
         public FormMain()
         {
             InitializeComponent();
-            _serviceProvider = DependencyInjection.ConfigureServices();
+            //_serviceProvider = DependencyInjection.ConfigureServices();
         }
 
         // Opens a page or selects it if already opened.
@@ -35,7 +35,8 @@ namespace WinForm
                 }
             }
 
-            T frm = _serviceProvider.GetRequiredService<T>();
+            //T frm = _serviceProvider.GetRequiredService<T>();
+            T frm = new T();
             frm.TopLevel = false;
             frm.Dock = DockStyle.Fill;
 
