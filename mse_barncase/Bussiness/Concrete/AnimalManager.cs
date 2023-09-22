@@ -14,10 +14,12 @@ namespace Bussiness.Concrete
     public class AnimalManager : IAnimalService
     {
         private IAnimalDal _animalDal;
+        //private IAnimalTypeDal _animalTypeDal;
 
-        public AnimalManager(IAnimalDal animalDal)
+        public AnimalManager(IAnimalDal animalDal/*, IAnimalTypeDal animalTypeDal*/)
         {
             _animalDal = animalDal;
+            //_animalTypeDal = animalTypeDal;
         }
         public IResult Add(Animal animal)
         {
@@ -55,5 +57,10 @@ namespace Bussiness.Concrete
             _animalDal.Update(animal);
             return new SuccessResult(Messages.AnimalUpdated);
         }
+
+        //IDataResult<Animal> IAnimalService.GetAmount()
+        //{           
+        //    return new SuccessDataResult<Animal>(_animalDal.GetList().Sum(a => a.AnimalTypeID.));
+        //}
     }
 }

@@ -168,7 +168,7 @@ namespace WinForm
             this.MaximizeBox = false;
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "FMS";
             this.pnlMain.ResumeLayout(false);
             this.pnlTab.ResumeLayout(false);
             this.pnlMenu.ResumeLayout(false);

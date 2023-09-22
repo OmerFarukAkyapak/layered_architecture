@@ -10,8 +10,6 @@ namespace Entities.Concrete
         public int ProductID { get; set; }
         public int SourceAnimalID { get; set; }
         public int ProductTypeID { get; set; }
-        public int ProductQuantity { get; set; }
-        public decimal ProductPrice { get; set; }
         public bool ProductIsSold { get; set; }
 
     }
