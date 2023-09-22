@@ -37,7 +37,7 @@ namespace Bussiness.Concrete
 
         public IDataResult<Animal> GetById(int animalId)
         {
-            return new SuccessDataResult<Animal>(_animalDal.Get(p => p.AnimalID == animalId));
+            return new SuccessDataResult<Animal>(_animalDal.Get(a => a.AnimalID == animalId));
         }
 
         public IDataResult<List<Animal>> GetList()

@@ -36,7 +36,7 @@ namespace Bussiness.Concrete
 
         public IDataResult<Barn> GetById(int farmId)
         {
-            return new SuccessDataResult<Barn>(_barnDal.Get(p => p.FarmID == farmId));
+            return new SuccessDataResult<Barn>(_barnDal.Get(f => f.FarmID == farmId));
         }
     }
 }

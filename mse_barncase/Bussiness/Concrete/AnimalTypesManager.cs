@@ -17,7 +17,7 @@ namespace Bussiness.Concrete
         }
         public IDataResult<AnimalTypes> GetById(int typeId)
         {
-            return new SuccessDataResult<AnimalTypes>(_animalTypes.Get(p => p.TypeID == typeId));
+            return new SuccessDataResult<AnimalTypes>(_animalTypes.Get(t => t.TypeID == typeId));
         }
     }
 }
