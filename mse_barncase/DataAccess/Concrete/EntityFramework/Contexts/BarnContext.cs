@@ -18,6 +18,7 @@ namespace DataAccess.Concrete.EntityFramework.Contexts
         public DbSet<Product> Product { get; set; }
         public DbSet<AnimalTypes> AnimalTypes { get; set; }
         public DbSet<AnimalGenders> AnimalGenders { get; set; }
+        public DbSet<ProductTypes> ProductTypes { get; set; }
 
     }
 }

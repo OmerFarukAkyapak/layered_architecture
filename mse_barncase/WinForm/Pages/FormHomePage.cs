@@ -18,6 +18,8 @@ namespace WinForm.Pages
         private IBarnService _barnService;
         private IAnimalService _animalService;
         private IProductService _productService;
+        private IAnimalTypesService _animalTypesService;
+        private IProductTypesService _productTypesService;
 
         DateTime date = DateTime.Now;
 
@@ -28,6 +30,8 @@ namespace WinForm.Pages
             _barnService = DependencyInjection.ConfigureServices().GetRequiredService<IBarnService>();
             _animalService = DependencyInjection.ConfigureServices().GetRequiredService<IAnimalService>();
             _productService = DependencyInjection.ConfigureServices().GetRequiredService<IProductService>();
+            _animalTypesService = DependencyInjection.ConfigureServices().GetRequiredService<IAnimalTypesService>();
+            _productTypesService = DependencyInjection.ConfigureServices().GetRequiredService<IProductTypesService>();
 
             FormLoad();
 
@@ -45,11 +49,28 @@ namespace WinForm.Pages
             var animals = _animalService.GetList();
             txtAnimalCount.Text = animals.Data.Count.ToString();
 
-            var productCount = _productService.GetList();
-            txtProductCount.Text = productCount.Data.Count.ToString();
-          
-            
+            var products = _productService.GetList();
+            txtProductCount.Text = products.Data.Count.ToString();
 
+            decimal animalWorth = 0;
+
+            foreach (var animal in animals.Data)
+            {
+                var type = _animalTypesService.GetById(animal.AnimalTypeID);
+                animalWorth = animalWorth + type.Data.TypePrice;
+
+            }
+            txtAnimalWorth.Text = animalWorth.ToString();
+
+            decimal productWorth = 0;
+
+            foreach (var product in products.Data)
+            {
+                var type = _productTypesService.GetById(product.ProductTypeID);
+                productWorth = productWorth + type.Data.ProductTypePrice;
+
+            }
+            txtProductWorth.Text = productWorth.ToString();
         }
     }
 }

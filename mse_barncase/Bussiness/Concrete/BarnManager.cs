@@ -19,9 +19,7 @@ namespace Bussiness.Concrete
 
         public IDataResult<Barn> GetAmount()
         {
-            Console.WriteLine("Get Amount basladi");
             var farmAmount = _barnDal.Get(f => f.FarmID == 1);
-            Console.WriteLine(farmAmount.ToString());
             if (farmAmount != null)
             {
                 return new SuccessDataResult<Barn>(data: farmAmount);

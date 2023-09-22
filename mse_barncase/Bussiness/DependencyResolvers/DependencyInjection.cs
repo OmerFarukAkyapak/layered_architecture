@@ -22,6 +22,11 @@ namespace Bussiness.DependencyResolvers
             services.AddSingleton<IProductDal, EfProductDal>();
             services.AddSingleton<IBarnService, BarnManager>();
             services.AddSingleton<IBarnDal, EfBarnDal>();
+            services.AddSingleton<IAnimalTypesService,AnimalTypesManager>();
+            services.AddSingleton<IAnimalTypeDal,EfAnimalTypesDal>();
+            services.AddSingleton<IProductTypesService,ProductTypesManager>();
+            services.AddSingleton<IProductTypesDal, EfProductTypesDal>();
+            
 
             var serviceProvider = services.BuildServiceProvider();
             
