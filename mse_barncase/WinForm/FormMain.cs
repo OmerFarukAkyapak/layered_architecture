@@ -1,13 +1,4 @@
-﻿using Bussiness.DependencyResolvers;
-using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 using System.Windows.Forms;
 using WinForm.Pages;
 
@@ -18,6 +9,7 @@ namespace WinForm
         public FormMain()
         {
             InitializeComponent();
+            OpenTabPage<FormHomePage>("Home Page");
         }
 
         // Opens a page or selects it if already opened.
@@ -48,7 +40,7 @@ namespace WinForm
 
         private void btnHomePage_Click(object sender, EventArgs e)
         {
-            OpenTabPage <FormHomePage> ("Home Page");
+            OpenTabPage<FormHomePage>("Home Page");
         }
 
         private void btnAnimalPage_Click(object sender, EventArgs e)
