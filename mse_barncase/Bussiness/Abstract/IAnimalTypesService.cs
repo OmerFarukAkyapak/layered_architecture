@@ -1,10 +1,14 @@
-﻿using System;
+﻿using Core.Utilities.Result;
+using Entities.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Bussiness.Abstract
 {
-    public class IAnimalTypesService
+    public interface IAnimalTypesService
     {
+        IDataResult<AnimalTypes>GetById(int typeId);
+        
     }
 }
