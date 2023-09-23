@@ -1,4 +1,5 @@
-﻿using Entities.Concrete;
+﻿using Entities.Abstract;
+using Entities.Concrete;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -19,6 +20,7 @@ namespace DataAccess.Concrete.EntityFramework.Contexts
         public DbSet<AnimalTypes> AnimalTypes { get; set; }
         public DbSet<AnimalGenders> AnimalGenders { get; set; }
         public DbSet<ProductTypes> ProductTypes { get; set; }
+        public DbSet<AnimalsView> AnimalsView { get; set; }
 
     }
 }

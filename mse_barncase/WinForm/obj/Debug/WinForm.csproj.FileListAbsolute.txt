@@ -79,3 +79,17 @@ C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\W
 C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\System.Collections.Immutable.xml
 C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\System.Diagnostics.DiagnosticSource.xml
 C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\System.Interactive.Async.xml
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\DevExpress.XtraGrid.v22.2.dll
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\DevExpress.XtraLayout.v22.2.dll
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\DevExpress.XtraPrinting.v22.2.dll
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\DevExpress.XtraBars.v22.2.dll
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\DevExpress.RichEdit.v22.2.Core.dll
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\DevExpress.XtraTreeList.v22.2.dll
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\DevExpress.Office.v22.2.Core.dll
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\DevExpress.XtraGrid.v22.2.xml
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\DevExpress.XtraLayout.v22.2.xml
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\DevExpress.XtraPrinting.v22.2.xml
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\DevExpress.XtraBars.v22.2.xml
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\DevExpress.RichEdit.v22.2.Core.xml
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\DevExpress.XtraTreeList.v22.2.xml
+C:\Users\faruk\OneDrive\Masaüstü\projects\mse intern\mse_intern\mse_barncase\WinForm\bin\Debug\DevExpress.Office.v22.2.Core.xml

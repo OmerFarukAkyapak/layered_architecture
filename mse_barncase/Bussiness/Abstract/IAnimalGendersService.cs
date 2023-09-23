@@ -9,5 +9,6 @@ namespace Bussiness.Abstract
     public interface IAnimalGendersService
     {
         IDataResult<AnimalGenders> GetById(int genderId);
+        IDataResult<List<string>> GetAnimalGenderNames();
     }
 }

@@ -29,36 +29,44 @@ namespace WinForm.Pages
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pnlAnimalPage = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
+            this.pnlGrid = new System.Windows.Forms.Panel();
+            this.dataGridAnimalList = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtFarmCurrent = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtSellAnimal = new System.Windows.Forms.TextBox();
+            this.numAnimalAge = new System.Windows.Forms.NumericUpDown();
+            this.btnBuyAnimal = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtSellAnimalAmount = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtBuyAnimalAmount = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cmbBoxAnimalGender = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmbBoxAnimalType = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnHomePage = new System.Windows.Forms.Button();
+            this.btnSellAnimal = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.seçToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlAnimalPage.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.pnlGrid.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridAnimalList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numAnimalAge)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlAnimalPage
@@ -75,27 +83,12 @@ namespace WinForm.Pages
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.dataGridView2);
             this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.pnlGrid);
             this.panel2.Location = new System.Drawing.Point(482, 12);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(464, 470);
             this.panel2.TabIndex = 3;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1});
-            this.dataGridView2.Location = new System.Drawing.Point(16, 64);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(434, 392);
-            this.dataGridView2.TabIndex = 5;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Column1";
-            this.Column1.Name = "Column1";
             // 
             // label1
             // 
@@ -107,10 +100,38 @@ namespace WinForm.Pages
             this.label1.TabIndex = 4;
             this.label1.Text = "ANIMALS LIST";
             // 
+            // pnlGrid
+            // 
+            this.pnlGrid.Controls.Add(this.dataGridAnimalList);
+            this.pnlGrid.Location = new System.Drawing.Point(3, 49);
+            this.pnlGrid.Name = "pnlGrid";
+            this.pnlGrid.Size = new System.Drawing.Size(458, 418);
+            this.pnlGrid.TabIndex = 26;
+            // 
+            // dataGridAnimalList
+            // 
+            this.dataGridAnimalList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridAnimalList.Location = new System.Drawing.Point(0, 0);
+            this.dataGridAnimalList.MainView = this.gridView1;
+            this.dataGridAnimalList.Name = "dataGridAnimalList";
+            this.dataGridAnimalList.Size = new System.Drawing.Size(458, 418);
+            this.dataGridAnimalList.TabIndex = 0;
+            this.dataGridAnimalList.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.GridControl = this.dataGridAnimalList;
+            this.gridView1.GroupPanelText = " ";
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsBehavior.ReadOnly = true;
+            this.gridView1.OptionsFind.AlwaysVisible = true;
+            this.gridView1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.gridView1_MouseUp);
+            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.label10);
-            this.panel4.Controls.Add(this.textBox4);
+            this.panel4.Controls.Add(this.txtFarmCurrent);
             this.panel4.Location = new System.Drawing.Point(482, 488);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(464, 178);
@@ -126,46 +147,80 @@ namespace WinForm.Pages
             this.label10.TabIndex = 19;
             this.label10.Text = "CURRENT BALANCE";
             // 
-            // textBox4
+            // txtFarmCurrent
             // 
-            this.textBox4.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
-            this.textBox4.Location = new System.Drawing.Point(153, 83);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(171, 36);
-            this.textBox4.TabIndex = 18;
+            this.txtFarmCurrent.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
+            this.txtFarmCurrent.Location = new System.Drawing.Point(153, 83);
+            this.txtFarmCurrent.Name = "txtFarmCurrent";
+            this.txtFarmCurrent.ReadOnly = true;
+            this.txtFarmCurrent.Size = new System.Drawing.Size(171, 36);
+            this.txtFarmCurrent.TabIndex = 18;
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.button1);
+            this.panel3.Controls.Add(this.txtSellAnimal);
+            this.panel3.Controls.Add(this.numAnimalAge);
+            this.panel3.Controls.Add(this.btnBuyAnimal);
             this.panel3.Controls.Add(this.label9);
-            this.panel3.Controls.Add(this.textBox3);
+            this.panel3.Controls.Add(this.txtSellAnimalAmount);
             this.panel3.Controls.Add(this.label8);
-            this.panel3.Controls.Add(this.textBox2);
+            this.panel3.Controls.Add(this.txtBuyAnimalAmount);
             this.panel3.Controls.Add(this.label7);
-            this.panel3.Controls.Add(this.textBox1);
             this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.comboBox3);
+            this.panel3.Controls.Add(this.cmbBoxAnimalGender);
             this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.comboBox2);
+            this.panel3.Controls.Add(this.cmbBoxAnimalType);
             this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.btnHomePage);
+            this.panel3.Controls.Add(this.btnSellAnimal);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.comboBox1);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Location = new System.Drawing.Point(12, 12);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(464, 654);
             this.panel3.TabIndex = 1;
             // 
-            // button1
+            // txtSellAnimal
             // 
-            this.button1.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(301, 475);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(135, 37);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "BUY";
-            this.button1.UseVisualStyleBackColor = true;
+            this.txtSellAnimal.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
+            this.txtSellAnimal.Location = new System.Drawing.Point(22, 84);
+            this.txtSellAnimal.Name = "txtSellAnimal";
+            this.txtSellAnimal.ReadOnly = true;
+            this.txtSellAnimal.Size = new System.Drawing.Size(171, 36);
+            this.txtSellAnimal.TabIndex = 25;
+            // 
+            // numAnimalAge
+            // 
+            this.numAnimalAge.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
+            this.numAnimalAge.Location = new System.Drawing.Point(22, 473);
+            this.numAnimalAge.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numAnimalAge.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numAnimalAge.Name = "numAnimalAge";
+            this.numAnimalAge.ReadOnly = true;
+            this.numAnimalAge.Size = new System.Drawing.Size(120, 36);
+            this.numAnimalAge.TabIndex = 22;
+            this.numAnimalAge.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // btnBuyAnimal
+            // 
+            this.btnBuyAnimal.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnBuyAnimal.Location = new System.Drawing.Point(301, 559);
+            this.btnBuyAnimal.Name = "btnBuyAnimal";
+            this.btnBuyAnimal.Size = new System.Drawing.Size(135, 36);
+            this.btnBuyAnimal.TabIndex = 20;
+            this.btnBuyAnimal.Text = "BUY";
+            this.btnBuyAnimal.UseVisualStyleBackColor = true;
             // 
             // label9
             // 
@@ -173,72 +228,67 @@ namespace WinForm.Pages
             this.label9.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label9.Location = new System.Drawing.Point(18, 140);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(82, 23);
+            this.label9.Size = new System.Drawing.Size(57, 23);
             this.label9.TabIndex = 19;
-            this.label9.Text = "Amount:";
+            this.label9.Text = "Price:";
             // 
-            // textBox3
+            // txtSellAnimalAmount
             // 
-            this.textBox3.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
-            this.textBox3.Location = new System.Drawing.Point(22, 167);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 36);
-            this.textBox3.TabIndex = 18;
+            this.txtSellAnimalAmount.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
+            this.txtSellAnimalAmount.Location = new System.Drawing.Point(22, 167);
+            this.txtSellAnimalAmount.Name = "txtSellAnimalAmount";
+            this.txtSellAnimalAmount.ReadOnly = true;
+            this.txtSellAnimalAmount.Size = new System.Drawing.Size(171, 36);
+            this.txtSellAnimalAmount.TabIndex = 18;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(161, 449);
+            this.label8.Location = new System.Drawing.Point(18, 532);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(82, 23);
+            this.label8.Size = new System.Drawing.Size(57, 23);
             this.label8.TabIndex = 17;
-            this.label8.Text = "Amount:";
+            this.label8.Text = "Price:";
             // 
-            // textBox2
+            // txtBuyAnimalAmount
             // 
-            this.textBox2.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
-            this.textBox2.Location = new System.Drawing.Point(165, 476);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 36);
-            this.textBox2.TabIndex = 16;
+            this.txtBuyAnimalAmount.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
+            this.txtBuyAnimalAmount.Location = new System.Drawing.Point(22, 559);
+            this.txtBuyAnimalAmount.Name = "txtBuyAnimalAmount";
+            this.txtBuyAnimalAmount.ReadOnly = true;
+            this.txtBuyAnimalAmount.Size = new System.Drawing.Size(171, 36);
+            this.txtBuyAnimalAmount.TabIndex = 16;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(18, 450);
+            this.label7.Location = new System.Drawing.Point(18, 447);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(100, 23);
             this.label7.TabIndex = 15;
             this.label7.Text = "Enter Age:";
             // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
-            this.textBox1.Location = new System.Drawing.Point(22, 476);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 36);
-            this.textBox1.TabIndex = 14;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(229, 355);
+            this.label6.Location = new System.Drawing.Point(261, 355);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(135, 23);
             this.label6.TabIndex = 13;
             this.label6.Text = "Select Gender:";
             // 
-            // comboBox3
+            // cmbBoxAnimalGender
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(233, 381);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(171, 37);
-            this.comboBox3.TabIndex = 12;
+            this.cmbBoxAnimalGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBoxAnimalGender.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
+            this.cmbBoxAnimalGender.FormattingEnabled = true;
+            this.cmbBoxAnimalGender.Location = new System.Drawing.Point(265, 381);
+            this.cmbBoxAnimalGender.Name = "cmbBoxAnimalGender";
+            this.cmbBoxAnimalGender.Size = new System.Drawing.Size(171, 37);
+            this.cmbBoxAnimalGender.TabIndex = 12;
             // 
             // label5
             // 
@@ -250,14 +300,16 @@ namespace WinForm.Pages
             this.label5.TabIndex = 11;
             this.label5.Text = "Select Animal:";
             // 
-            // comboBox2
+            // cmbBoxAnimalType
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(22, 381);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(171, 37);
-            this.comboBox2.TabIndex = 10;
+            this.cmbBoxAnimalType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBoxAnimalType.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
+            this.cmbBoxAnimalType.FormattingEnabled = true;
+            this.cmbBoxAnimalType.Location = new System.Drawing.Point(22, 381);
+            this.cmbBoxAnimalType.Name = "cmbBoxAnimalType";
+            this.cmbBoxAnimalType.Size = new System.Drawing.Size(171, 37);
+            this.cmbBoxAnimalType.TabIndex = 10;
+            this.cmbBoxAnimalType.SelectedIndexChanged += new System.EventHandler(this.cmbBoxAnimalType_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -269,15 +321,15 @@ namespace WinForm.Pages
             this.label4.TabIndex = 9;
             this.label4.Text = "BUY ANIMAL";
             // 
-            // btnHomePage
+            // btnSellAnimal
             // 
-            this.btnHomePage.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnHomePage.Location = new System.Drawing.Point(301, 84);
-            this.btnHomePage.Name = "btnHomePage";
-            this.btnHomePage.Size = new System.Drawing.Size(135, 37);
-            this.btnHomePage.TabIndex = 8;
-            this.btnHomePage.Text = "SELL";
-            this.btnHomePage.UseVisualStyleBackColor = true;
+            this.btnSellAnimal.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnSellAnimal.Location = new System.Drawing.Point(301, 167);
+            this.btnSellAnimal.Name = "btnSellAnimal";
+            this.btnSellAnimal.Size = new System.Drawing.Size(135, 36);
+            this.btnSellAnimal.TabIndex = 8;
+            this.btnSellAnimal.Text = "SELL";
+            this.btnSellAnimal.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -285,18 +337,9 @@ namespace WinForm.Pages
             this.label3.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.Location = new System.Drawing.Point(18, 58);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(129, 23);
+            this.label3.Size = new System.Drawing.Size(150, 23);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Select Animal:";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(22, 84);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(171, 37);
-            this.comboBox1.TabIndex = 6;
+            this.label3.Text = "Selected Animal:";
             // 
             // label2
             // 
@@ -307,6 +350,20 @@ namespace WinForm.Pages
             this.label2.Size = new System.Drawing.Size(176, 29);
             this.label2.TabIndex = 5;
             this.label2.Text = "SELL ANIMAL";
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.seçToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(93, 26);
+            // 
+            // seçToolStripMenuItem
+            // 
+            this.seçToolStripMenuItem.Name = "seçToolStripMenuItem";
+            this.seçToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
+            this.seçToolStripMenuItem.Text = "Seç";
+            this.seçToolStripMenuItem.Click += new System.EventHandler(this.seçToolStripMenuItem_Click);
             // 
             // FormAnimalPage
             // 
@@ -320,11 +377,15 @@ namespace WinForm.Pages
             this.pnlAnimalPage.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.pnlGrid.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridAnimalList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numAnimalAge)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -335,26 +396,29 @@ namespace WinForm.Pages
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtFarmCurrent;
+        private System.Windows.Forms.Button btnBuyAnimal;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtSellAnimalAmount;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtBuyAnimalAmount;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cmbBoxAnimalGender;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmbBoxAnimalType;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btnHomePage;
+        private System.Windows.Forms.Button btnSellAnimal;
+        private System.Windows.Forms.NumericUpDown numAnimalAge;
+        private System.Windows.Forms.TextBox txtSellAnimal;
+        private System.Windows.Forms.Panel pnlGrid;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem seçToolStripMenuItem;
+        private DevExpress.XtraGrid.GridControl dataGridAnimalList;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
     }
 }
