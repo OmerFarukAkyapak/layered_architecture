@@ -36,6 +36,9 @@ namespace Bussiness.DependencyResolvers
 
             services.AddSingleton<IAnimalViewService, AnimalViewManager>();
             services.AddSingleton<IAnimalsViewDal, EfAnimalsViewDal>();
+
+            services.AddSingleton<IProductsViewService, ProductsViewManager>();
+            services.AddSingleton<IProductsViewDal, EfProductsViewDal>();
             
 
             var serviceProvider = services.BuildServiceProvider();
