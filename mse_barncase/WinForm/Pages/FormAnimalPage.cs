@@ -105,5 +105,10 @@ namespace WinForm.Pages
                 FormLoad();
             }
         }
+
+        private void picRefresh_Click(object sender, EventArgs e)
+        {
+            FormLoad();
+        }
     }
 }

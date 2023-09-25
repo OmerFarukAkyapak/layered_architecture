@@ -46,5 +46,10 @@ namespace WinForm.Pages
             txtSellProduct.Text = gridView1.GetFocusedRowCellValue("ProductTypeName").ToString();
             txtProductAomunt.Text = gridView1.GetFocusedRowCellValue("ProductTypePrice").ToString();
         }
+
+        private void picRefresh_Click(object sender, EventArgs e)
+        {
+            FormLoad();
+        }
     }
 }

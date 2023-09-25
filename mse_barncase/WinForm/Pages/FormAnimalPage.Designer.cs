@@ -32,6 +32,7 @@ namespace WinForm.Pages
             this.components = new System.ComponentModel.Container();
             this.pnlAnimalPage = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.picRefresh = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlGrid = new System.Windows.Forms.Panel();
             this.dataGridAnimalList = new DevExpress.XtraGrid.GridControl();
@@ -40,6 +41,7 @@ namespace WinForm.Pages
             this.label10 = new System.Windows.Forms.Label();
             this.txtFarmCurrent = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.txtSelectedID = new System.Windows.Forms.TextBox();
             this.txtSellAnimal = new System.Windows.Forms.TextBox();
             this.numAnimalAge = new System.Windows.Forms.NumericUpDown();
             this.btnBuyAnimal = new System.Windows.Forms.Button();
@@ -58,9 +60,9 @@ namespace WinForm.Pages
             this.label2 = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.seçToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.txtSelectedID = new System.Windows.Forms.TextBox();
             this.pnlAnimalPage.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picRefresh)).BeginInit();
             this.pnlGrid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridAnimalList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
@@ -84,12 +86,24 @@ namespace WinForm.Pages
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.picRefresh);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.pnlGrid);
-            this.panel2.Location = new System.Drawing.Point(482, 12);
+            this.panel2.Location = new System.Drawing.Point(466, 12);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(464, 470);
             this.panel2.TabIndex = 3;
+            // 
+            // picRefresh
+            // 
+            this.picRefresh.Image = global::WinForm.Properties.Resources.refresh;
+            this.picRefresh.Location = new System.Drawing.Point(418, 0);
+            this.picRefresh.Name = "picRefresh";
+            this.picRefresh.Size = new System.Drawing.Size(43, 40);
+            this.picRefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picRefresh.TabIndex = 28;
+            this.picRefresh.TabStop = false;
+            this.picRefresh.Click += new System.EventHandler(this.picRefresh_Click);
             // 
             // label1
             // 
@@ -133,7 +147,7 @@ namespace WinForm.Pages
             // 
             this.panel4.Controls.Add(this.label10);
             this.panel4.Controls.Add(this.txtFarmCurrent);
-            this.panel4.Location = new System.Drawing.Point(482, 488);
+            this.panel4.Location = new System.Drawing.Point(466, 488);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(464, 178);
             this.panel4.TabIndex = 2;
@@ -178,8 +192,18 @@ namespace WinForm.Pages
             this.panel3.Controls.Add(this.label2);
             this.panel3.Location = new System.Drawing.Point(12, 12);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(464, 654);
+            this.panel3.Size = new System.Drawing.Size(447, 654);
             this.panel3.TabIndex = 1;
+            // 
+            // txtSelectedID
+            // 
+            this.txtSelectedID.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
+            this.txtSelectedID.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtSelectedID.Location = new System.Drawing.Point(199, 84);
+            this.txtSelectedID.Name = "txtSelectedID";
+            this.txtSelectedID.ReadOnly = true;
+            this.txtSelectedID.Size = new System.Drawing.Size(103, 36);
+            this.txtSelectedID.TabIndex = 26;
             // 
             // txtSellAnimal
             // 
@@ -369,16 +393,6 @@ namespace WinForm.Pages
             this.seçToolStripMenuItem.Text = "Select";
             this.seçToolStripMenuItem.Click += new System.EventHandler(this.seçToolStripMenuItem_Click);
             // 
-            // txtSelectedID
-            // 
-            this.txtSelectedID.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
-            this.txtSelectedID.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtSelectedID.Location = new System.Drawing.Point(199, 84);
-            this.txtSelectedID.Name = "txtSelectedID";
-            this.txtSelectedID.ReadOnly = true;
-            this.txtSelectedID.Size = new System.Drawing.Size(103, 36);
-            this.txtSelectedID.TabIndex = 26;
-            // 
             // FormAnimalPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -391,6 +405,7 @@ namespace WinForm.Pages
             this.pnlAnimalPage.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picRefresh)).EndInit();
             this.pnlGrid.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridAnimalList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
@@ -435,5 +450,6 @@ namespace WinForm.Pages
         private DevExpress.XtraGrid.GridControl dataGridAnimalList;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private System.Windows.Forms.TextBox txtSelectedID;
+        private System.Windows.Forms.PictureBox picRefresh;
     }
 }

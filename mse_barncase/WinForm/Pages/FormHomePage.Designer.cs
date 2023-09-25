@@ -30,6 +30,7 @@ namespace WinForm.Pages
         private void InitializeComponent()
         {
             this.pnlHome = new System.Windows.Forms.Panel();
+            this.picRefresh = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.lblDateDay = new System.Windows.Forms.Label();
             this.lblDateNum = new System.Windows.Forms.Label();
@@ -58,6 +59,7 @@ namespace WinForm.Pages
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlHome.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picRefresh)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel6.SuspendLayout();
@@ -74,6 +76,7 @@ namespace WinForm.Pages
             // pnlHome
             // 
             this.pnlHome.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pnlHome.Controls.Add(this.picRefresh);
             this.pnlHome.Controls.Add(this.panel5);
             this.pnlHome.Controls.Add(this.panel6);
             this.pnlHome.Controls.Add(this.panel7);
@@ -86,13 +89,24 @@ namespace WinForm.Pages
             this.pnlHome.Size = new System.Drawing.Size(954, 678);
             this.pnlHome.TabIndex = 0;
             // 
+            // picRefresh
+            // 
+            this.picRefresh.Image = global::WinForm.Properties.Resources.refresh;
+            this.picRefresh.Location = new System.Drawing.Point(897, 5);
+            this.picRefresh.Name = "picRefresh";
+            this.picRefresh.Size = new System.Drawing.Size(43, 40);
+            this.picRefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picRefresh.TabIndex = 28;
+            this.picRefresh.TabStop = false;
+            this.picRefresh.Click += new System.EventHandler(this.picRefresh_Click);
+            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel5.Controls.Add(this.lblDateDay);
             this.panel5.Controls.Add(this.lblDateNum);
             this.panel5.Controls.Add(this.pictureBox5);
-            this.panel5.Location = new System.Drawing.Point(667, 363);
+            this.panel5.Location = new System.Drawing.Point(645, 363);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(243, 269);
             this.panel5.TabIndex = 4;
@@ -134,7 +148,7 @@ namespace WinForm.Pages
             this.panel6.Controls.Add(this.label9);
             this.panel6.Controls.Add(this.txtAnimalWorth);
             this.panel6.Controls.Add(this.label8);
-            this.panel6.Location = new System.Drawing.Point(345, 363);
+            this.panel6.Location = new System.Drawing.Point(338, 363);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(243, 269);
             this.panel6.TabIndex = 3;
@@ -226,7 +240,7 @@ namespace WinForm.Pages
             this.panel4.Controls.Add(this.txtProductCount);
             this.panel4.Controls.Add(this.label6);
             this.panel4.Controls.Add(this.pictureBox3);
-            this.panel4.Location = new System.Drawing.Point(667, 29);
+            this.panel4.Location = new System.Drawing.Point(645, 29);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(243, 268);
             this.panel4.TabIndex = 1;
@@ -267,7 +281,7 @@ namespace WinForm.Pages
             this.panel3.Controls.Add(this.txtAnimalCount);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Location = new System.Drawing.Point(345, 29);
+            this.panel3.Location = new System.Drawing.Point(338, 29);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(243, 268);
             this.panel3.TabIndex = 1;
@@ -375,6 +389,7 @@ namespace WinForm.Pages
             this.Name = "FormHomePage";
             this.Text = "FormHomePage";
             this.pnlHome.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picRefresh)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -426,5 +441,6 @@ namespace WinForm.Pages
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lblDateDay;
         private System.Windows.Forms.Label lblDateNum;
+        private System.Windows.Forms.PictureBox picRefresh;
     }
 }

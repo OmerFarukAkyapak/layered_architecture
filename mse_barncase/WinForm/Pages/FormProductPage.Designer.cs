@@ -32,6 +32,7 @@ namespace WinForm.Pages
             this.components = new System.ComponentModel.Container();
             this.pnlProduct = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.picRefresh = new System.Windows.Forms.PictureBox();
             this.txtCurrent = new System.Windows.Forms.TextBox();
             this.txtProductAomunt = new System.Windows.Forms.TextBox();
             this.txtSellProduct = new System.Windows.Forms.TextBox();
@@ -49,6 +50,7 @@ namespace WinForm.Pages
             this.selectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlProduct.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picRefresh)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridProductList)).BeginInit();
@@ -69,6 +71,7 @@ namespace WinForm.Pages
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.picRefresh);
             this.panel2.Controls.Add(this.txtCurrent);
             this.panel2.Controls.Add(this.txtProductAomunt);
             this.panel2.Controls.Add(this.txtSellProduct);
@@ -81,6 +84,17 @@ namespace WinForm.Pages
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(450, 654);
             this.panel2.TabIndex = 1;
+            // 
+            // picRefresh
+            // 
+            this.picRefresh.Image = global::WinForm.Properties.Resources.refresh;
+            this.picRefresh.Location = new System.Drawing.Point(397, 1);
+            this.picRefresh.Name = "picRefresh";
+            this.picRefresh.Size = new System.Drawing.Size(43, 40);
+            this.picRefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picRefresh.TabIndex = 29;
+            this.picRefresh.TabStop = false;
+            this.picRefresh.Click += new System.EventHandler(this.picRefresh_Click);
             // 
             // txtCurrent
             // 
@@ -211,12 +225,12 @@ namespace WinForm.Pages
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.selectToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 48);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(106, 26);
             // 
             // selectToolStripMenuItem
             // 
             this.selectToolStripMenuItem.Name = "selectToolStripMenuItem";
-            this.selectToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.selectToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.selectToolStripMenuItem.Text = "Select";
             this.selectToolStripMenuItem.Click += new System.EventHandler(this.selectToolStripMenuItem_Click);
             // 
@@ -232,6 +246,7 @@ namespace WinForm.Pages
             this.pnlProduct.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picRefresh)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -261,5 +276,6 @@ namespace WinForm.Pages
         private System.Windows.Forms.TextBox txtSellProduct;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem selectToolStripMenuItem;
+        private System.Windows.Forms.PictureBox picRefresh;
     }
 }
