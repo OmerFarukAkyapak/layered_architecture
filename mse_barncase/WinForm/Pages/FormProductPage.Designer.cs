@@ -29,24 +29,31 @@ namespace WinForm.Pages
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pnlProduct = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtCurrent = new System.Windows.Forms.TextBox();
+            this.txtProductAomunt = new System.Windows.Forms.TextBox();
+            this.txtSellProduct = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.btnHomePage = new System.Windows.Forms.Button();
+            this.btnSell = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.dataGridProductList = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.selectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlProduct.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridProductList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlProduct
@@ -62,18 +69,45 @@ namespace WinForm.Pages
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.txtCurrent);
+            this.panel2.Controls.Add(this.txtProductAomunt);
+            this.panel2.Controls.Add(this.txtSellProduct);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.textBox4);
-            this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.btnHomePage);
+            this.panel2.Controls.Add(this.btnSell);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.comboBox1);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(492, 12);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(450, 654);
             this.panel2.TabIndex = 1;
+            // 
+            // txtCurrent
+            // 
+            this.txtCurrent.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
+            this.txtCurrent.Location = new System.Drawing.Point(126, 502);
+            this.txtCurrent.Name = "txtCurrent";
+            this.txtCurrent.ReadOnly = true;
+            this.txtCurrent.Size = new System.Drawing.Size(171, 36);
+            this.txtCurrent.TabIndex = 28;
+            // 
+            // txtProductAomunt
+            // 
+            this.txtProductAomunt.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
+            this.txtProductAomunt.Location = new System.Drawing.Point(137, 206);
+            this.txtProductAomunt.Name = "txtProductAomunt";
+            this.txtProductAomunt.ReadOnly = true;
+            this.txtProductAomunt.Size = new System.Drawing.Size(171, 36);
+            this.txtProductAomunt.TabIndex = 27;
+            // 
+            // txtSellProduct
+            // 
+            this.txtSellProduct.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
+            this.txtSellProduct.Location = new System.Drawing.Point(137, 111);
+            this.txtSellProduct.Name = "txtSellProduct";
+            this.txtSellProduct.ReadOnly = true;
+            this.txtSellProduct.Size = new System.Drawing.Size(171, 36);
+            this.txtSellProduct.TabIndex = 26;
             // 
             // label10
             // 
@@ -89,62 +123,37 @@ namespace WinForm.Pages
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(102, 159);
+            this.label9.Location = new System.Drawing.Point(133, 170);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(82, 23);
+            this.label9.Size = new System.Drawing.Size(57, 23);
             this.label9.TabIndex = 25;
-            this.label9.Text = "Amount:";
+            this.label9.Text = "Price:";
             // 
-            // textBox4
+            // btnSell
             // 
-            this.textBox4.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
-            this.textBox4.Location = new System.Drawing.Point(126, 489);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(171, 36);
-            this.textBox4.TabIndex = 20;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
-            this.textBox3.Location = new System.Drawing.Point(106, 186);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 36);
-            this.textBox3.TabIndex = 24;
-            // 
-            // btnHomePage
-            // 
-            this.btnHomePage.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnHomePage.Location = new System.Drawing.Point(106, 258);
-            this.btnHomePage.Name = "btnHomePage";
-            this.btnHomePage.Size = new System.Drawing.Size(135, 37);
-            this.btnHomePage.TabIndex = 23;
-            this.btnHomePage.Text = "SELL";
-            this.btnHomePage.UseVisualStyleBackColor = true;
+            this.btnSell.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnSell.Location = new System.Drawing.Point(137, 289);
+            this.btnSell.Name = "btnSell";
+            this.btnSell.Size = new System.Drawing.Size(135, 37);
+            this.btnSell.TabIndex = 23;
+            this.btnSell.Text = "SELL";
+            this.btnSell.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(102, 77);
+            this.label3.Location = new System.Drawing.Point(133, 85);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(137, 23);
+            this.label3.Size = new System.Drawing.Size(158, 23);
             this.label3.TabIndex = 22;
-            this.label3.Text = "Select Product:";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(106, 103);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(171, 37);
-            this.comboBox1.TabIndex = 21;
+            this.label3.Text = "Selected Product:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(101, 36);
+            this.label2.Location = new System.Drawing.Point(132, 12);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(196, 29);
             this.label2.TabIndex = 20;
@@ -152,27 +161,40 @@ namespace WinForm.Pages
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.dataGridView2);
+            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(462, 654);
             this.panel1.TabIndex = 0;
             // 
-            // dataGridView2
+            // panel3
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1});
-            this.dataGridView2.Location = new System.Drawing.Point(13, 56);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(434, 554);
-            this.dataGridView2.TabIndex = 6;
+            this.panel3.Controls.Add(this.dataGridProductList);
+            this.panel3.Location = new System.Drawing.Point(13, 44);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(439, 566);
+            this.panel3.TabIndex = 6;
             // 
-            // Column1
+            // dataGridProductList
             // 
-            this.Column1.HeaderText = "Column1";
-            this.Column1.Name = "Column1";
+            this.dataGridProductList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridProductList.Location = new System.Drawing.Point(0, 0);
+            this.dataGridProductList.MainView = this.gridView1;
+            this.dataGridProductList.Name = "dataGridProductList";
+            this.dataGridProductList.Size = new System.Drawing.Size(439, 566);
+            this.dataGridProductList.TabIndex = 7;
+            this.dataGridProductList.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.GridControl = this.dataGridProductList;
+            this.gridView1.GroupPanelText = " ";
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsBehavior.ReadOnly = true;
+            this.gridView1.OptionsFind.AlwaysVisible = true;
+            this.gridView1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.gridView1_MouseUp);
             // 
             // label1
             // 
@@ -183,6 +205,19 @@ namespace WinForm.Pages
             this.label1.Size = new System.Drawing.Size(209, 29);
             this.label1.TabIndex = 5;
             this.label1.Text = "PRODUCTS LIST";
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.selectToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(106, 26);
+            // 
+            // selectToolStripMenuItem
+            // 
+            this.selectToolStripMenuItem.Name = "selectToolStripMenuItem";
+            this.selectToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
+            this.selectToolStripMenuItem.Text = "Select";
             // 
             // FormProductPage
             // 
@@ -198,7 +233,10 @@ namespace WinForm.Pages
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridProductList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -208,16 +246,19 @@ namespace WinForm.Pages
         private System.Windows.Forms.Panel pnlProduct;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button btnHomePage;
+        private System.Windows.Forms.Button btnSell;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel3;
+        private DevExpress.XtraGrid.GridControl dataGridProductList;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private System.Windows.Forms.TextBox txtCurrent;
+        private System.Windows.Forms.TextBox txtProductAomunt;
+        private System.Windows.Forms.TextBox txtSellProduct;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem selectToolStripMenuItem;
     }
 }

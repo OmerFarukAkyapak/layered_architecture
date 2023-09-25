@@ -62,6 +62,7 @@ namespace WinForm.Pages
 
         private void seçToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //sell animal
             txtSellAnimal.Text = gridView1.GetFocusedRowCellValue("TypeName").ToString();
             txtSellAnimalAmount.Text = gridView1.GetFocusedRowCellValue("TypePrice").ToString();
         }

@@ -356,13 +356,13 @@ namespace WinForm.Pages
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.seçToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(93, 26);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 48);
             // 
             // seçToolStripMenuItem
             // 
             this.seçToolStripMenuItem.Name = "seçToolStripMenuItem";
-            this.seçToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
-            this.seçToolStripMenuItem.Text = "Seç";
+            this.seçToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.seçToolStripMenuItem.Text = "Select";
             this.seçToolStripMenuItem.Click += new System.EventHandler(this.seçToolStripMenuItem_Click);
             // 
             // FormAnimalPage
