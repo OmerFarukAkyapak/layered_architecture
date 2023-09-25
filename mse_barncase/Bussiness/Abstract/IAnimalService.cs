@@ -11,8 +11,8 @@ namespace Bussiness.Abstract
         IDataResult<Animal> GetById(int animalId);
         IDataResult<List<Animal>> GetList();
         IDataResult<List<Animal>> GetListByTypes(int typeId);
-        IResult Add(Animal animal);
-        IResult Delete(Animal animal);
+        IResult Add(int typeid, int genderid, int age);
+        IResult Delete(int animalid);
         IResult Update(Animal animal);
     }
 }

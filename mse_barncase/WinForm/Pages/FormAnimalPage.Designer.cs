@@ -58,6 +58,7 @@ namespace WinForm.Pages
             this.label2 = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.seçToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.txtSelectedID = new System.Windows.Forms.TextBox();
             this.pnlAnimalPage.SuspendLayout();
             this.panel2.SuspendLayout();
             this.pnlGrid.SuspendLayout();
@@ -158,6 +159,7 @@ namespace WinForm.Pages
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.txtSelectedID);
             this.panel3.Controls.Add(this.txtSellAnimal);
             this.panel3.Controls.Add(this.numAnimalAge);
             this.panel3.Controls.Add(this.btnBuyAnimal);
@@ -221,6 +223,7 @@ namespace WinForm.Pages
             this.btnBuyAnimal.TabIndex = 20;
             this.btnBuyAnimal.Text = "BUY";
             this.btnBuyAnimal.UseVisualStyleBackColor = true;
+            this.btnBuyAnimal.Click += new System.EventHandler(this.btnBuyAnimal_Click);
             // 
             // label9
             // 
@@ -330,6 +333,7 @@ namespace WinForm.Pages
             this.btnSellAnimal.TabIndex = 8;
             this.btnSellAnimal.Text = "SELL";
             this.btnSellAnimal.UseVisualStyleBackColor = true;
+            this.btnSellAnimal.Click += new System.EventHandler(this.btnSellAnimal_Click);
             // 
             // label3
             // 
@@ -356,14 +360,24 @@ namespace WinForm.Pages
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.seçToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 48);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(106, 26);
             // 
             // seçToolStripMenuItem
             // 
             this.seçToolStripMenuItem.Name = "seçToolStripMenuItem";
-            this.seçToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.seçToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.seçToolStripMenuItem.Text = "Select";
             this.seçToolStripMenuItem.Click += new System.EventHandler(this.seçToolStripMenuItem_Click);
+            // 
+            // txtSelectedID
+            // 
+            this.txtSelectedID.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
+            this.txtSelectedID.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtSelectedID.Location = new System.Drawing.Point(199, 84);
+            this.txtSelectedID.Name = "txtSelectedID";
+            this.txtSelectedID.ReadOnly = true;
+            this.txtSelectedID.Size = new System.Drawing.Size(103, 36);
+            this.txtSelectedID.TabIndex = 26;
             // 
             // FormAnimalPage
             // 
@@ -420,5 +434,6 @@ namespace WinForm.Pages
         private System.Windows.Forms.ToolStripMenuItem seçToolStripMenuItem;
         private DevExpress.XtraGrid.GridControl dataGridAnimalList;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private System.Windows.Forms.TextBox txtSelectedID;
     }
 }

@@ -63,6 +63,7 @@ namespace WinForm.Pages
         private void seçToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //sell animal
+            txtSelectedID.Text = gridView1.GetFocusedRowCellValue("AnimalID").ToString();
             txtSellAnimal.Text = gridView1.GetFocusedRowCellValue("TypeName").ToString();
             txtSellAnimalAmount.Text = gridView1.GetFocusedRowCellValue("TypePrice").ToString();
         }
@@ -71,6 +72,38 @@ namespace WinForm.Pages
         {
             if (e.Button != MouseButtons.Right) return;
             contextMenuStrip1.Show(MousePosition.X, MousePosition.Y);
+        }
+
+        private void btnBuyAnimal_Click(object sender, EventArgs e)
+        {
+            int type = cmbBoxAnimalType.SelectedIndex + 1;
+            int gender = cmbBoxAnimalGender.SelectedIndex + 1;
+            int age = Convert.ToInt32(numAnimalAge.Value);
+
+            decimal buyPrice = Convert.ToDecimal(txtBuyAnimalAmount.Text);
+
+            DialogResult result = MessageBox.Show("Are you sure you want to do this?", "Yes", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                _animalService.Add(type, gender, age);
+                _barnService.DecreaseAmount(buyPrice);
+                FormLoad();
+            }
+        }
+
+        private void btnSellAnimal_Click(object sender, EventArgs e)
+        {
+            int selectedID = Convert.ToInt32(txtSelectedID.Text);
+
+            decimal sellPrice = Convert.ToDecimal(txtSellAnimalAmount.Text);
+
+            DialogResult result = MessageBox.Show("Are you sure you want to do this?", "Yes", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                _animalService.Delete(selectedID);
+                _barnService.IncreaceAmount(sellPrice);
+                FormLoad();
+            }
         }
     }
 }

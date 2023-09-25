@@ -14,6 +14,8 @@ namespace Bussiness.Constant
         public static string ProductDeleted = "Product delete is successful";
         public static string ProductUpdated = "Product update is successful";
 
+        public static string BarnUpdated = "Barn update is successful";
+
 
 
     }

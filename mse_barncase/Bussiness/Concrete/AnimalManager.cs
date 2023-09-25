@@ -14,14 +14,21 @@ namespace Bussiness.Concrete
     public class AnimalManager : IAnimalService
     {
         private IAnimalDal _animalDal;
+        private Animal animalProps;
 
         public AnimalManager(IAnimalDal animalDal)
         {
             _animalDal = animalDal;
         }
-        public IResult Add(Animal animal)
+        public IResult Add(int typeid,int genderid,int age)
         {
             // Buy a new animal
+            Animal animal = new Animal();
+
+            animal.AnimalTypeID = typeid;
+            animal.AnimalGenderID = genderid;
+            animal.AnimalAge = age;
+            
             animal.AnimalIsAlive = true;
             animal.AnimalIsSold = false;
 
@@ -29,9 +36,10 @@ namespace Bussiness.Concrete
             return new SuccessResult(Messages.AnimalAdded); 
         }
 
-        public IResult Delete(Animal animal)
+        public IResult Delete(int animalid)
         {
-            _animalDal.Delete(animal);
+            var selectedAnimal = _animalDal.Get(a => a.AnimalID == animalid);
+            _animalDal.Delete(selectedAnimal);
             return new SuccessResult(Messages.AnimalDeleted);
         }
 
