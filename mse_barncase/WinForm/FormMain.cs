@@ -10,7 +10,7 @@ namespace WinForm
         {
             InitializeComponent();
             OpenTabPage<FormHomePage>("Home Page");
-        }     
+        }
 
         // Opens a page or selects it if already opened.
         private void OpenTabPage<T>(string tabPageName) where T : Form, new()

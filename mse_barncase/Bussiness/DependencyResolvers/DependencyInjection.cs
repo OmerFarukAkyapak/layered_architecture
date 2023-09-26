@@ -4,14 +4,11 @@ using DataAccess.Abstact;
 using DataAccess.Concrete.EntityFramework;
 using Microsoft.Extensions.DependencyInjection;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Bussiness.DependencyResolvers
 {
     public class DependencyInjection
     {
-        //public static IServiceProvider ServiceProvider { get;  set; }
         public static IServiceProvider ConfigureServices()
         {
             var services = new ServiceCollection();
@@ -25,13 +22,13 @@ namespace Bussiness.DependencyResolvers
             services.AddSingleton<IBarnService, BarnManager>();
             services.AddSingleton<IBarnDal, EfBarnDal>();
 
-            services.AddSingleton<IAnimalTypesService,AnimalTypesManager>();
-            services.AddSingleton<IAnimalTypeDal,EfAnimalTypesDal>();
+            services.AddSingleton<IAnimalTypesService, AnimalTypesManager>();
+            services.AddSingleton<IAnimalTypeDal, EfAnimalTypesDal>();
 
-            services.AddSingleton<IProductTypesService,ProductTypesManager>();
+            services.AddSingleton<IProductTypesService, ProductTypesManager>();
             services.AddSingleton<IProductTypesDal, EfProductTypesDal>();
 
-            services.AddSingleton<IAnimalGendersService,AnimalGendersManager>();
+            services.AddSingleton<IAnimalGendersService, AnimalGendersManager>();
             services.AddSingleton<IAnimalGendersDal, EfAnimalGendersDal>();
 
             services.AddSingleton<IAnimalViewService, AnimalViewManager>();
@@ -39,15 +36,11 @@ namespace Bussiness.DependencyResolvers
 
             services.AddSingleton<IProductsViewService, ProductsViewManager>();
             services.AddSingleton<IProductsViewDal, EfProductsViewDal>();
-            
 
             var serviceProvider = services.BuildServiceProvider();
-            
+
             return serviceProvider;
 
         }
-        
-
-        
     }
 }

@@ -115,7 +115,7 @@ namespace WinForm.Pages
             // 
             this.lblDateDay.AutoSize = true;
             this.lblDateDay.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblDateDay.Location = new System.Drawing.Point(81, 211);
+            this.lblDateDay.Location = new System.Drawing.Point(73, 199);
             this.lblDateDay.Name = "lblDateDay";
             this.lblDateDay.Size = new System.Drawing.Size(81, 29);
             this.lblDateDay.TabIndex = 6;

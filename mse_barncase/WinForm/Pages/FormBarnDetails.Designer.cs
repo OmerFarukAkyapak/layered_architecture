@@ -30,14 +30,14 @@ namespace WinForm.Pages
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title9 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title10 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title5 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title6 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.chartProduct = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -60,8 +60,8 @@ namespace WinForm.Pages
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.label2 = new System.Windows.Forms.Label();
             this.contextAnimal = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.contextProduct = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.exportToExcelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextProduct = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.exportToExcelToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -105,27 +105,27 @@ namespace WinForm.Pages
             // 
             // chartProduct
             // 
-            chartArea9.Name = "ChartArea1";
-            this.chartProduct.ChartAreas.Add(chartArea9);
-            legend9.Name = "Legend1";
-            this.chartProduct.Legends.Add(legend9);
-            this.chartProduct.Location = new System.Drawing.Point(18, 293);
+            chartArea5.Name = "ChartArea1";
+            this.chartProduct.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            this.chartProduct.Legends.Add(legend5);
+            this.chartProduct.Location = new System.Drawing.Point(5, 293);
             this.chartProduct.Name = "chartProduct";
-            series9.ChartArea = "ChartArea1";
-            series9.Legend = "Legend1";
-            series9.Name = "Product Is Sold";
-            this.chartProduct.Series.Add(series9);
+            series5.ChartArea = "ChartArea1";
+            series5.Legend = "Legend1";
+            series5.Name = "Product Is Sold";
+            this.chartProduct.Series.Add(series5);
             this.chartProduct.Size = new System.Drawing.Size(435, 243);
             this.chartProduct.TabIndex = 30;
             this.chartProduct.Text = "chart2";
-            title9.Name = "Title1";
-            title9.Text = "Products Chart";
-            this.chartProduct.Titles.Add(title9);
+            title5.Name = "Title1";
+            title5.Text = "Products Chart";
+            this.chartProduct.Titles.Add(title5);
             // 
             // pnlGridProduct
             // 
             this.pnlGridProduct.Controls.Add(this.dataGridProductList);
-            this.pnlGridProduct.Location = new System.Drawing.Point(18, 42);
+            this.pnlGridProduct.Location = new System.Drawing.Point(5, 42);
             this.pnlGridProduct.Name = "pnlGridProduct";
             this.pnlGridProduct.Size = new System.Drawing.Size(435, 234);
             this.pnlGridProduct.TabIndex = 29;
@@ -153,7 +153,7 @@ namespace WinForm.Pages
             // picRefresh
             // 
             this.picRefresh.Image = global::WinForm.Properties.Resources.refresh;
-            this.picRefresh.Location = new System.Drawing.Point(419, 2);
+            this.picRefresh.Location = new System.Drawing.Point(415, 2);
             this.picRefresh.Name = "picRefresh";
             this.picRefresh.Size = new System.Drawing.Size(43, 40);
             this.picRefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -165,7 +165,7 @@ namespace WinForm.Pages
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(13, 10);
+            this.label1.Location = new System.Drawing.Point(40, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(209, 29);
             this.label1.TabIndex = 6;
@@ -250,22 +250,22 @@ namespace WinForm.Pages
             // 
             // chartAnimal
             // 
-            chartArea10.Name = "ChartArea1";
-            this.chartAnimal.ChartAreas.Add(chartArea10);
-            legend10.Name = "Legend1";
-            this.chartAnimal.Legends.Add(legend10);
+            chartArea6.Name = "ChartArea1";
+            this.chartAnimal.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.chartAnimal.Legends.Add(legend6);
             this.chartAnimal.Location = new System.Drawing.Point(12, 293);
             this.chartAnimal.Name = "chartAnimal";
-            series10.ChartArea = "ChartArea1";
-            series10.Legend = "Legend1";
-            series10.Name = "Animals Is Sold";
-            this.chartAnimal.Series.Add(series10);
+            series6.ChartArea = "ChartArea1";
+            series6.Legend = "Legend1";
+            series6.Name = "Animals Is Sold";
+            this.chartAnimal.Series.Add(series6);
             this.chartAnimal.Size = new System.Drawing.Size(435, 243);
             this.chartAnimal.TabIndex = 9;
             this.chartAnimal.Text = "chart1";
-            title10.Name = "Title1";
-            title10.Text = "Animals Chart";
-            this.chartAnimal.Titles.Add(title10);
+            title6.Name = "Title1";
+            title6.Text = "Animals Chart";
+            this.chartAnimal.Titles.Add(title6);
             // 
             // pnlGridAnimal
             // 
@@ -312,24 +312,24 @@ namespace WinForm.Pages
             this.contextAnimal.Name = "contextAnimal";
             this.contextAnimal.Size = new System.Drawing.Size(153, 26);
             // 
+            // exportToExcelToolStripMenuItem
+            // 
+            this.exportToExcelToolStripMenuItem.Name = "exportToExcelToolStripMenuItem";
+            this.exportToExcelToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exportToExcelToolStripMenuItem.Text = "Export to Excel";
+            this.exportToExcelToolStripMenuItem.Click += new System.EventHandler(this.exportToExcelToolStripMenuItem_Click);
+            // 
             // contextProduct
             // 
             this.contextProduct.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exportToExcelToolStripMenuItem1});
             this.contextProduct.Name = "contextProduct";
-            this.contextProduct.Size = new System.Drawing.Size(181, 48);
-            // 
-            // exportToExcelToolStripMenuItem
-            // 
-            this.exportToExcelToolStripMenuItem.Name = "exportToExcelToolStripMenuItem";
-            this.exportToExcelToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.exportToExcelToolStripMenuItem.Text = "Export to Excel";
-            this.exportToExcelToolStripMenuItem.Click += new System.EventHandler(this.exportToExcelToolStripMenuItem_Click);
+            this.contextProduct.Size = new System.Drawing.Size(153, 26);
             // 
             // exportToExcelToolStripMenuItem1
             // 
             this.exportToExcelToolStripMenuItem1.Name = "exportToExcelToolStripMenuItem1";
-            this.exportToExcelToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.exportToExcelToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.exportToExcelToolStripMenuItem1.Text = "Export to Excel";
             this.exportToExcelToolStripMenuItem1.Click += new System.EventHandler(this.exportToExcelToolStripMenuItem1_Click);
             // 
