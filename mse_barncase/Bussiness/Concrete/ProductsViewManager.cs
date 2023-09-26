@@ -25,6 +25,10 @@ namespace Bussiness.Concrete
         {
             return new SuccessDataResult<List<ProductsView>>(_productsViewDal.GetList().ToList());
         }
+        public IDataResult<List<ProductsView>> GetListSold()
+        {
+            return new SuccessDataResult<List<ProductsView>>(_productsViewDal.GetList().Where(p => p.ProductIsSold == true).ToList());
+        }
 
         public IDataResult<List<ProductsView>> GetListNotSold()
         {

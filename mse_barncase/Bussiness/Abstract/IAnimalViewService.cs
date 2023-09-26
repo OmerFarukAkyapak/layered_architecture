@@ -11,5 +11,6 @@ namespace Bussiness.Abstract
         IDataResult<AnimalsView> GetById(int animalId);
         IDataResult<List<AnimalsView>> GetListAll();
         IDataResult<List<AnimalsView>> GetListNotSold();
+        IDataResult<List<AnimalsView>> GetListSold();
     }
 }

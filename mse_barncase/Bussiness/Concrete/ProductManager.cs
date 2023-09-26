@@ -44,9 +44,11 @@ namespace Bussiness.Concrete
             return new SuccessDataResult<List<Product>>(_productDal.GetList(filter: p => p.ProductTypeID == typeId).ToList());
         }
 
-        public IResult Update(Product product)
+        public IResult Update(int productid, bool issold)
         {
-            _productDal.Update(product);
+            var selectedProduct = _productDal.Get(p => p.ProductID == productid);
+            selectedProduct.ProductIsSold = issold;
+            _productDal.Update(selectedProduct);
             return new SuccessResult(Messages.ProductUpdated);
         }
     }

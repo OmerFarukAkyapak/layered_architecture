@@ -11,5 +11,6 @@ namespace Bussiness.Abstract
         IDataResult<ProductsView> GetById(int productId);
         IDataResult<List<ProductsView>> GetListAll();
         IDataResult<List<ProductsView>> GetListNotSold();
+        IDataResult<List<ProductsView>> GetListSold();
     }
 }

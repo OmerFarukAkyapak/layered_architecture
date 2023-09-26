@@ -29,38 +29,48 @@ namespace WinForm.Pages
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.chartProduct = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.pnlGridProduct = new System.Windows.Forms.Panel();
+            this.dataGridProductList = new DevExpress.XtraGrid.GridControl();
+            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.picRefresh = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtAnimalWorth = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtProductWorth = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtCurrent = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.chartAnimal = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.pnlGridAnimal = new System.Windows.Forms.Panel();
+            this.dataGridAnimalList = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartProduct)).BeginInit();
+            this.pnlGridProduct.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridProductList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRefresh)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartAnimal)).BeginInit();
+            this.pnlGridAnimal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridAnimalList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -77,15 +87,60 @@ namespace WinForm.Pages
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.chartProduct);
+            this.panel4.Controls.Add(this.pnlGridProduct);
             this.panel4.Controls.Add(this.picRefresh);
-            this.panel4.Controls.Add(this.label6);
-            this.panel4.Controls.Add(this.dataGridView4);
-            this.panel4.Controls.Add(this.dataGridView2);
             this.panel4.Controls.Add(this.label1);
             this.panel4.Location = new System.Drawing.Point(478, 2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(464, 548);
             this.panel4.TabIndex = 1;
+            // 
+            // chartProduct
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chartProduct.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartProduct.Legends.Add(legend1);
+            this.chartProduct.Location = new System.Drawing.Point(18, 293);
+            this.chartProduct.Name = "chartProduct";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Product Is Sold";
+            this.chartProduct.Series.Add(series1);
+            this.chartProduct.Size = new System.Drawing.Size(435, 243);
+            this.chartProduct.TabIndex = 30;
+            this.chartProduct.Text = "chart2";
+            title1.Name = "Title1";
+            title1.Text = "Products Chart";
+            this.chartProduct.Titles.Add(title1);
+            // 
+            // pnlGridProduct
+            // 
+            this.pnlGridProduct.Controls.Add(this.dataGridProductList);
+            this.pnlGridProduct.Location = new System.Drawing.Point(18, 42);
+            this.pnlGridProduct.Name = "pnlGridProduct";
+            this.pnlGridProduct.Size = new System.Drawing.Size(435, 234);
+            this.pnlGridProduct.TabIndex = 29;
+            // 
+            // dataGridProductList
+            // 
+            this.dataGridProductList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridProductList.Location = new System.Drawing.Point(0, 0);
+            this.dataGridProductList.MainView = this.gridView2;
+            this.dataGridProductList.Name = "dataGridProductList";
+            this.dataGridProductList.Size = new System.Drawing.Size(435, 234);
+            this.dataGridProductList.TabIndex = 8;
+            this.dataGridProductList.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView2});
+            // 
+            // gridView2
+            // 
+            this.gridView2.GridControl = this.dataGridProductList;
+            this.gridView2.GroupPanelText = " ";
+            this.gridView2.Name = "gridView2";
+            this.gridView2.OptionsBehavior.ReadOnly = true;
+            this.gridView2.OptionsFind.AlwaysVisible = true;
             // 
             // picRefresh
             // 
@@ -96,46 +151,7 @@ namespace WinForm.Pages
             this.picRefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picRefresh.TabIndex = 28;
             this.picRefresh.TabStop = false;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(45, 278);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(281, 29);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "SOLD PRODUCTS LIST";
-            // 
-            // dataGridView4
-            // 
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn3});
-            this.dataGridView4.Location = new System.Drawing.Point(18, 310);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(434, 215);
-            this.dataGridView4.TabIndex = 10;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Column1";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1});
-            this.dataGridView2.Location = new System.Drawing.Point(18, 42);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(434, 216);
-            this.dataGridView2.TabIndex = 7;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Column1";
-            this.Column1.Name = "Column1";
+            this.picRefresh.Click += new System.EventHandler(this.picRefresh_Click);
             // 
             // label1
             // 
@@ -150,11 +166,11 @@ namespace WinForm.Pages
             // panel3
             // 
             this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.textBox2);
+            this.panel3.Controls.Add(this.txtAnimalWorth);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.txtProductWorth);
             this.panel3.Controls.Add(this.label10);
-            this.panel3.Controls.Add(this.textBox4);
+            this.panel3.Controls.Add(this.txtCurrent);
             this.panel3.Location = new System.Drawing.Point(12, 556);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(930, 100);
@@ -170,13 +186,13 @@ namespace WinForm.Pages
             this.label4.TabIndex = 27;
             this.label4.Text = "ANIMALS WORTH";
             // 
-            // textBox2
+            // txtAnimalWorth
             // 
-            this.textBox2.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
-            this.textBox2.Location = new System.Drawing.Point(78, 45);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(171, 36);
-            this.textBox2.TabIndex = 26;
+            this.txtAnimalWorth.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
+            this.txtAnimalWorth.Location = new System.Drawing.Point(78, 45);
+            this.txtAnimalWorth.Name = "txtAnimalWorth";
+            this.txtAnimalWorth.Size = new System.Drawing.Size(171, 36);
+            this.txtAnimalWorth.TabIndex = 26;
             // 
             // label3
             // 
@@ -188,13 +204,13 @@ namespace WinForm.Pages
             this.label3.TabIndex = 25;
             this.label3.Text = "PRODUCT WORTH";
             // 
-            // textBox1
+            // txtProductWorth
             // 
-            this.textBox1.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
-            this.textBox1.Location = new System.Drawing.Point(382, 45);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(171, 36);
-            this.textBox1.TabIndex = 24;
+            this.txtProductWorth.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
+            this.txtProductWorth.Location = new System.Drawing.Point(382, 45);
+            this.txtProductWorth.Name = "txtProductWorth";
+            this.txtProductWorth.Size = new System.Drawing.Size(171, 36);
+            this.txtProductWorth.TabIndex = 24;
             // 
             // label10
             // 
@@ -206,49 +222,69 @@ namespace WinForm.Pages
             this.label10.TabIndex = 23;
             this.label10.Text = "CURRENT BALANCE";
             // 
-            // textBox4
+            // txtCurrent
             // 
-            this.textBox4.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
-            this.textBox4.Location = new System.Drawing.Point(690, 45);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(171, 36);
-            this.textBox4.TabIndex = 22;
+            this.txtCurrent.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
+            this.txtCurrent.Location = new System.Drawing.Point(690, 45);
+            this.txtCurrent.Name = "txtCurrent";
+            this.txtCurrent.Size = new System.Drawing.Size(171, 36);
+            this.txtCurrent.TabIndex = 22;
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.dataGridView3);
+            this.panel2.Controls.Add(this.chartAnimal);
+            this.panel2.Controls.Add(this.pnlGridAnimal);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Location = new System.Drawing.Point(12, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(460, 548);
             this.panel2.TabIndex = 0;
             // 
-            // label5
+            // chartAnimal
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(39, 278);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(261, 29);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "SOLD ANIMALS LIST";
+            chartArea2.Name = "ChartArea1";
+            this.chartAnimal.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartAnimal.Legends.Add(legend2);
+            this.chartAnimal.Location = new System.Drawing.Point(12, 293);
+            this.chartAnimal.Name = "chartAnimal";
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Animals Is Sold";
+            this.chartAnimal.Series.Add(series2);
+            this.chartAnimal.Size = new System.Drawing.Size(435, 243);
+            this.chartAnimal.TabIndex = 9;
+            this.chartAnimal.Text = "chart1";
+            title2.Name = "Title1";
+            title2.Text = "Animals Chart";
+            this.chartAnimal.Titles.Add(title2);
             // 
-            // dataGridView3
+            // pnlGridAnimal
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn2});
-            this.dataGridView3.Location = new System.Drawing.Point(12, 310);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(434, 215);
-            this.dataGridView3.TabIndex = 8;
+            this.pnlGridAnimal.Controls.Add(this.dataGridAnimalList);
+            this.pnlGridAnimal.Location = new System.Drawing.Point(12, 42);
+            this.pnlGridAnimal.Name = "pnlGridAnimal";
+            this.pnlGridAnimal.Size = new System.Drawing.Size(435, 234);
+            this.pnlGridAnimal.TabIndex = 8;
             // 
-            // dataGridViewTextBoxColumn2
+            // dataGridAnimalList
             // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Column1";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridAnimalList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridAnimalList.Location = new System.Drawing.Point(0, 0);
+            this.dataGridAnimalList.MainView = this.gridView1;
+            this.dataGridAnimalList.Name = "dataGridAnimalList";
+            this.dataGridAnimalList.Size = new System.Drawing.Size(435, 234);
+            this.dataGridAnimalList.TabIndex = 1;
+            this.dataGridAnimalList.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.GridControl = this.dataGridAnimalList;
+            this.gridView1.GroupPanelText = " ";
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsBehavior.ReadOnly = true;
+            this.gridView1.OptionsFind.AlwaysVisible = true;
             // 
             // label2
             // 
@@ -259,21 +295,6 @@ namespace WinForm.Pages
             this.label2.Size = new System.Drawing.Size(189, 29);
             this.label2.TabIndex = 7;
             this.label2.Text = "ANIMALS LIST";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 42);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(434, 216);
-            this.dataGridView1.TabIndex = 6;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Column1";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
             // FormBarnDetails
             // 
@@ -287,15 +308,19 @@ namespace WinForm.Pages
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartProduct)).EndInit();
+            this.pnlGridProduct.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridProductList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRefresh)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartAnimal)).EndInit();
+            this.pnlGridAnimal.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridAnimalList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -307,23 +332,21 @@ namespace WinForm.Pages
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtCurrent;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtAnimalWorth;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DataGridView dataGridView4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DataGridView dataGridView3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.TextBox txtProductWorth;
         private System.Windows.Forms.PictureBox picRefresh;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartProduct;
+        private System.Windows.Forms.Panel pnlGridProduct;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartAnimal;
+        private System.Windows.Forms.Panel pnlGridAnimal;
+        private DevExpress.XtraGrid.GridControl dataGridAnimalList;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.GridControl dataGridProductList;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
     }
 }

@@ -40,6 +40,7 @@ namespace WinForm
             this.label2 = new System.Windows.Forms.Label();
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.pnlMain.SuspendLayout();
             this.pnlTab.SuspendLayout();
             this.pnlMenu.SuspendLayout();
@@ -48,6 +49,7 @@ namespace WinForm
             // 
             // pnlMain
             // 
+            this.pnlMain.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.pnlMain.Controls.Add(this.pnlTab);
             this.pnlMain.Controls.Add(this.pnlMenu);
             this.pnlMain.Controls.Add(this.pnlHeader);
@@ -76,6 +78,7 @@ namespace WinForm
             // 
             // pnlMenu
             // 
+            this.pnlMenu.Controls.Add(this.label3);
             this.pnlMenu.Controls.Add(this.btnBarnDetails);
             this.pnlMenu.Controls.Add(this.btnProductPage);
             this.pnlMenu.Controls.Add(this.btnAnimalPage);
@@ -159,6 +162,17 @@ namespace WinForm
             this.label1.TabIndex = 0;
             this.label1.Text = "FARM MANAGEMENT SYSTEM";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.ForeColor = System.Drawing.Color.Blue;
+            this.label3.Location = new System.Drawing.Point(0, 661);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(189, 14);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Developed by Faruk AKYAPAK";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -192,6 +206,7 @@ namespace WinForm
         private System.Windows.Forms.Button btnHomePage;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
     }
 }
 

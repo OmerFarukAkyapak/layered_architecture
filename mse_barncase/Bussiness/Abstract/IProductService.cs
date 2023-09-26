@@ -13,6 +13,6 @@ namespace Bussiness.Abstract
         IDataResult<List<Product>> GetListByTypes(int typeId);
         IResult Add(Product product);
         IResult Delete(Product product);
-        IResult Update(Product product);
+        IResult Update(int productid, bool issold);
     }
 }

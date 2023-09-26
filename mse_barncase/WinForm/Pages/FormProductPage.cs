@@ -16,12 +16,14 @@ namespace WinForm.Pages
     public partial class FormProductPage : Form
     {
         private IBarnService _barnService;
+        private IProductService _productService;
         private IProductsViewService _productsViewService;
         public FormProductPage()
         {
             InitializeComponent();
 
             _barnService = DependencyInjection.ConfigureServices().GetRequiredService<IBarnService>();
+            _productService = DependencyInjection.ConfigureServices().GetRequiredService<IProductService>();
             _productsViewService = DependencyInjection.ConfigureServices().GetRequiredService<IProductsViewService>();
 
             FormLoad();
@@ -43,6 +45,7 @@ namespace WinForm.Pages
 
         private void selectToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            txtSelectedID.Text = gridView1.GetFocusedRowCellValue("ProductID").ToString();
             txtSellProduct.Text = gridView1.GetFocusedRowCellValue("ProductTypeName").ToString();
             txtProductAomunt.Text = gridView1.GetFocusedRowCellValue("ProductTypePrice").ToString();
         }
@@ -50,6 +53,21 @@ namespace WinForm.Pages
         private void picRefresh_Click(object sender, EventArgs e)
         {
             FormLoad();
+        }
+
+        private void btnSell_Click(object sender, EventArgs e)
+        {
+            int selectedID = Convert.ToInt32(txtSelectedID.Text);
+
+            decimal sellPrice = Convert.ToDecimal(txtProductAomunt.Text);
+
+            DialogResult result = MessageBox.Show("Are you sure you want to do this?", "Yes", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                _productService.Update(selectedID, true);
+                _barnService.IncreaceAmount(sellPrice);
+                FormLoad();
+            }
         }
     }
 }

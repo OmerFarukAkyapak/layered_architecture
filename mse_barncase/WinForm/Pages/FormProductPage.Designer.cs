@@ -48,6 +48,8 @@ namespace WinForm.Pages
             this.label1 = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.selectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.txtSelectedID = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.pnlProduct.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picRefresh)).BeginInit();
@@ -71,6 +73,8 @@ namespace WinForm.Pages
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.txtSelectedID);
+            this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.picRefresh);
             this.panel2.Controls.Add(this.txtCurrent);
             this.panel2.Controls.Add(this.txtProductAomunt);
@@ -80,15 +84,15 @@ namespace WinForm.Pages
             this.panel2.Controls.Add(this.btnSell);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(492, 12);
+            this.panel2.Location = new System.Drawing.Point(549, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(450, 654);
+            this.panel2.Size = new System.Drawing.Size(393, 654);
             this.panel2.TabIndex = 1;
             // 
             // picRefresh
             // 
             this.picRefresh.Image = global::WinForm.Properties.Resources.refresh;
-            this.picRefresh.Location = new System.Drawing.Point(397, 1);
+            this.picRefresh.Location = new System.Drawing.Point(346, 1);
             this.picRefresh.Name = "picRefresh";
             this.picRefresh.Size = new System.Drawing.Size(43, 40);
             this.picRefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -99,7 +103,7 @@ namespace WinForm.Pages
             // txtCurrent
             // 
             this.txtCurrent.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
-            this.txtCurrent.Location = new System.Drawing.Point(126, 502);
+            this.txtCurrent.Location = new System.Drawing.Point(75, 502);
             this.txtCurrent.Name = "txtCurrent";
             this.txtCurrent.ReadOnly = true;
             this.txtCurrent.Size = new System.Drawing.Size(171, 36);
@@ -108,7 +112,7 @@ namespace WinForm.Pages
             // txtProductAomunt
             // 
             this.txtProductAomunt.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
-            this.txtProductAomunt.Location = new System.Drawing.Point(137, 206);
+            this.txtProductAomunt.Location = new System.Drawing.Point(86, 304);
             this.txtProductAomunt.Name = "txtProductAomunt";
             this.txtProductAomunt.ReadOnly = true;
             this.txtProductAomunt.Size = new System.Drawing.Size(171, 36);
@@ -117,7 +121,7 @@ namespace WinForm.Pages
             // txtSellProduct
             // 
             this.txtSellProduct.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
-            this.txtSellProduct.Location = new System.Drawing.Point(137, 111);
+            this.txtSellProduct.Location = new System.Drawing.Point(86, 209);
             this.txtSellProduct.Name = "txtSellProduct";
             this.txtSellProduct.ReadOnly = true;
             this.txtSellProduct.Size = new System.Drawing.Size(171, 36);
@@ -127,7 +131,7 @@ namespace WinForm.Pages
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.Location = new System.Drawing.Point(122, 463);
+            this.label10.Location = new System.Drawing.Point(71, 463);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(175, 23);
             this.label10.TabIndex = 21;
@@ -137,7 +141,7 @@ namespace WinForm.Pages
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(133, 170);
+            this.label9.Location = new System.Drawing.Point(82, 268);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(57, 23);
             this.label9.TabIndex = 25;
@@ -146,18 +150,19 @@ namespace WinForm.Pages
             // btnSell
             // 
             this.btnSell.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnSell.Location = new System.Drawing.Point(137, 289);
+            this.btnSell.Location = new System.Drawing.Point(86, 387);
             this.btnSell.Name = "btnSell";
             this.btnSell.Size = new System.Drawing.Size(135, 37);
             this.btnSell.TabIndex = 23;
             this.btnSell.Text = "SELL";
             this.btnSell.UseVisualStyleBackColor = true;
+            this.btnSell.Click += new System.EventHandler(this.btnSell_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(133, 85);
+            this.label3.Location = new System.Drawing.Point(82, 183);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(158, 23);
             this.label3.TabIndex = 22;
@@ -167,7 +172,7 @@ namespace WinForm.Pages
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(132, 12);
+            this.label2.Location = new System.Drawing.Point(81, 12);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(196, 29);
             this.label2.TabIndex = 20;
@@ -179,7 +184,7 @@ namespace WinForm.Pages
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(462, 654);
+            this.panel1.Size = new System.Drawing.Size(531, 654);
             this.panel1.TabIndex = 0;
             // 
             // panel3
@@ -187,7 +192,7 @@ namespace WinForm.Pages
             this.panel3.Controls.Add(this.dataGridProductList);
             this.panel3.Location = new System.Drawing.Point(13, 44);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(439, 566);
+            this.panel3.Size = new System.Drawing.Size(515, 566);
             this.panel3.TabIndex = 6;
             // 
             // dataGridProductList
@@ -196,7 +201,7 @@ namespace WinForm.Pages
             this.dataGridProductList.Location = new System.Drawing.Point(0, 0);
             this.dataGridProductList.MainView = this.gridView1;
             this.dataGridProductList.Name = "dataGridProductList";
-            this.dataGridProductList.Size = new System.Drawing.Size(439, 566);
+            this.dataGridProductList.Size = new System.Drawing.Size(515, 566);
             this.dataGridProductList.TabIndex = 7;
             this.dataGridProductList.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -233,6 +238,25 @@ namespace WinForm.Pages
             this.selectToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.selectToolStripMenuItem.Text = "Select";
             this.selectToolStripMenuItem.Click += new System.EventHandler(this.selectToolStripMenuItem_Click);
+            // 
+            // txtSelectedID
+            // 
+            this.txtSelectedID.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
+            this.txtSelectedID.Location = new System.Drawing.Point(86, 125);
+            this.txtSelectedID.Name = "txtSelectedID";
+            this.txtSelectedID.ReadOnly = true;
+            this.txtSelectedID.Size = new System.Drawing.Size(171, 36);
+            this.txtSelectedID.TabIndex = 31;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Location = new System.Drawing.Point(82, 99);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(178, 23);
+            this.label4.TabIndex = 30;
+            this.label4.Text = "Selected ProductID:";
             // 
             // FormProductPage
             // 
@@ -277,5 +301,7 @@ namespace WinForm.Pages
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem selectToolStripMenuItem;
         private System.Windows.Forms.PictureBox picRefresh;
+        private System.Windows.Forms.TextBox txtSelectedID;
+        private System.Windows.Forms.Label label4;
     }
 }

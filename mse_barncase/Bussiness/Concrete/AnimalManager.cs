@@ -14,7 +14,6 @@ namespace Bussiness.Concrete
     public class AnimalManager : IAnimalService
     {
         private IAnimalDal _animalDal;
-        private Animal animalProps;
 
         public AnimalManager(IAnimalDal animalDal)
         {
