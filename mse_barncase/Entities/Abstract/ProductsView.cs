@@ -13,5 +13,6 @@ namespace Entities.Abstract
         public int AnimalID { get; set; }
         public string ProductTypeName { get; set; }
         public decimal ProductTypePrice { get; set; }
+        public bool ProductIsSold { get; set; }
     }
 }

@@ -40,7 +40,7 @@ namespace WinForm.Pages
         {
             var barnAmount = _barnService.GetAmount();
             txtFarmCurrent.Text = barnAmount.Data.FarmAmount.ToString();
-            var animals = _animalsViewService.GetList();
+            var animals = _animalsViewService.GetListNotSold();
             dataGridAnimalList.DataSource = animals.Data;
 
             //buy animal side
@@ -100,7 +100,7 @@ namespace WinForm.Pages
             DialogResult result = MessageBox.Show("Are you sure you want to do this?", "Yes", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
-                _animalService.Delete(selectedID);
+                _animalService.Update(selectedID,true);
                 _barnService.IncreaceAmount(sellPrice);
                 FormLoad();
             }

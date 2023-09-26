@@ -13,6 +13,6 @@ namespace Bussiness.Abstract
         IDataResult<List<Animal>> GetListByTypes(int typeId);
         IResult Add(int typeid, int genderid, int age);
         IResult Delete(int animalid);
-        IResult Update(Animal animal);
+        IResult Update(int animalid, bool issold);
     }
 }

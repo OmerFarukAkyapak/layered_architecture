@@ -9,6 +9,7 @@ namespace Bussiness.Abstract
     public interface IAnimalViewService
     {
         IDataResult<AnimalsView> GetById(int animalId);
-        IDataResult<List<AnimalsView>> GetList();
+        IDataResult<List<AnimalsView>> GetListAll();
+        IDataResult<List<AnimalsView>> GetListNotSold();
     }
 }

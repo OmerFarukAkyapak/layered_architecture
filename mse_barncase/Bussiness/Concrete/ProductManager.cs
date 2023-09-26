@@ -36,7 +36,7 @@ namespace Bussiness.Concrete
 
         public IDataResult<List<Product>> GetList()
         {
-            return new SuccessDataResult<List<Product>>(_productDal.GetList().ToList());
+            return new SuccessDataResult<List<Product>>(_productDal.GetList().Where(p => p.ProductIsSold == false).ToList());
         }
 
         public IDataResult<List<Product>> GetListByTypes(int typeId)

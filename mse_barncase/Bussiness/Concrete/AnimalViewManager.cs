@@ -21,9 +21,14 @@ namespace Bussiness.Concrete
             return new SuccessDataResult<AnimalsView>(_animals.Get(a => a.AnimalID == animalId));
         }
 
-        public IDataResult<List<AnimalsView>> GetList()
+        public IDataResult<List<AnimalsView>> GetListAll()
         {
             return new SuccessDataResult<List<AnimalsView>>(_animals.GetList().ToList());
+        }
+
+        public IDataResult<List<AnimalsView>> GetListNotSold()
+        {
+            return new SuccessDataResult<List<AnimalsView>>(_animals.GetList().Where(a=>a.AnimalIsSold==false).ToList());
         }
     }
 }

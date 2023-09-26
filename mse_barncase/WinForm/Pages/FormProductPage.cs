@@ -30,7 +30,7 @@ namespace WinForm.Pages
         {
             var barnAmount = _barnService.GetAmount();
             txtCurrent.Text = barnAmount.Data.FarmAmount.ToString();
-            var products = _productsViewService.GetList();
+            var products = _productsViewService.GetListNotSold();
             dataGridProductList.DataSource = products.Data;
 
         }

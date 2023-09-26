@@ -50,7 +50,7 @@ namespace Bussiness.Concrete
 
         public IDataResult<List<Animal>> GetList()
         {
-            return new SuccessDataResult<List<Animal>>(_animalDal.GetList().ToList());
+            return new SuccessDataResult<List<Animal>>(_animalDal.GetList().Where(a=>a.AnimalIsSold==false).ToList());
         }
 
         public IDataResult<List<Animal>> GetListByTypes(int typeId)
@@ -58,9 +58,11 @@ namespace Bussiness.Concrete
             return new SuccessDataResult<List<Animal>>(_animalDal.GetList().Where(a => a.AnimalTypeID == typeId).ToList());
         }
 
-        public IResult Update(Animal animal)
+        public IResult Update(int animalid,bool issold)
         {
-            _animalDal.Update(animal);
+            var selectedAnimal = _animalDal.Get(a => a.AnimalID == animalid);
+            selectedAnimal.AnimalIsSold = issold;
+            _animalDal.Update(selectedAnimal);
             return new SuccessResult(Messages.AnimalUpdated);
         }
     }

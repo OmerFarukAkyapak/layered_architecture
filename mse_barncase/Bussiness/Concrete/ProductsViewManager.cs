@@ -21,9 +21,14 @@ namespace Bussiness.Concrete
             return new SuccessDataResult<ProductsView>(_productsViewDal.Get(a => a.ProductID == productId));
         }
 
-        public IDataResult<List<ProductsView>> GetList()
+        public IDataResult<List<ProductsView>> GetListAll()
         {
             return new SuccessDataResult<List<ProductsView>>(_productsViewDal.GetList().ToList());
+        }
+
+        public IDataResult<List<ProductsView>> GetListNotSold()
+        {
+            return new SuccessDataResult<List<ProductsView>>(_productsViewDal.GetList().Where(p=>p.ProductIsSold==false).ToList());
         }
     }
 }
