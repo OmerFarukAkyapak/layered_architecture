@@ -2,13 +2,6 @@
 using Bussiness.DependencyResolvers;
 using Microsoft.Extensions.DependencyInjection;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WinForm.Pages
@@ -19,7 +12,6 @@ namespace WinForm.Pages
         private IAnimalService _animalService;
         private IProductService _productService;
         private IAnimalTypesService _animalTypesService;
-        private IAnimalGendersService _animalGendersService;
         private IProductTypesService _productTypesService;
         private IAnimalViewService _animalsViewService;
         private IProductsViewService _productsViewService;
@@ -31,7 +23,6 @@ namespace WinForm.Pages
             _animalService = DependencyInjection.ConfigureServices().GetRequiredService<IAnimalService>();
             _productService = DependencyInjection.ConfigureServices().GetRequiredService<IProductService>();
             _animalTypesService = DependencyInjection.ConfigureServices().GetRequiredService<IAnimalTypesService>();
-            _animalGendersService = DependencyInjection.ConfigureServices().GetRequiredService<IAnimalGendersService>();
             _productTypesService = DependencyInjection.ConfigureServices().GetRequiredService<IProductTypesService>();
             _animalsViewService = DependencyInjection.ConfigureServices().GetRequiredService<IAnimalViewService>();
             _productsViewService = DependencyInjection.ConfigureServices().GetRequiredService<IProductsViewService>();
@@ -56,8 +47,8 @@ namespace WinForm.Pages
 
             chartAnimal.Series.Clear();
             chartAnimal.Series.Add("Animals Is Sold");
-            chartAnimal.Series["Animals Is Sold"].Points.AddXY("Sold",soldAnimalsCount);
-            chartAnimal.Series["Animals Is Sold"].Points.AddXY("NotSold",notSoldAnimalsCount);
+            chartAnimal.Series["Animals Is Sold"].Points.AddXY("Sold", soldAnimalsCount);
+            chartAnimal.Series["Animals Is Sold"].Points.AddXY("NotSold", notSoldAnimalsCount);
             chartAnimal.Series["Animals Is Sold"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
 
             int soldProductsCount = _productsViewService.GetListSold().Data.Count;
@@ -72,7 +63,7 @@ namespace WinForm.Pages
             //txts
             var barnAmount = _barnService.GetAmount();
             txtCurrent.Text = barnAmount.Data.FarmAmount.ToString();
-            
+
             decimal animalWorth = 0;
 
             foreach (var animal in animals.Data)
@@ -131,7 +122,7 @@ namespace WinForm.Pages
 
         private void exportToExcelToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ExportToExcel(gridView1,"");
+            ExportToExcel(gridView1, "");
         }
 
         private void exportToExcelToolStripMenuItem1_Click(object sender, EventArgs e)
