@@ -29,14 +29,15 @@ namespace WinForm.Pages
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title9 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title10 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.chartProduct = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -58,6 +59,10 @@ namespace WinForm.Pages
             this.dataGridAnimalList = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.label2 = new System.Windows.Forms.Label();
+            this.contextAnimal = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.contextProduct = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.exportToExcelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportToExcelToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartProduct)).BeginInit();
@@ -71,6 +76,8 @@ namespace WinForm.Pages
             this.pnlGridAnimal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridAnimalList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            this.contextAnimal.SuspendLayout();
+            this.contextProduct.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -98,22 +105,22 @@ namespace WinForm.Pages
             // 
             // chartProduct
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartProduct.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartProduct.Legends.Add(legend1);
+            chartArea9.Name = "ChartArea1";
+            this.chartProduct.ChartAreas.Add(chartArea9);
+            legend9.Name = "Legend1";
+            this.chartProduct.Legends.Add(legend9);
             this.chartProduct.Location = new System.Drawing.Point(18, 293);
             this.chartProduct.Name = "chartProduct";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Product Is Sold";
-            this.chartProduct.Series.Add(series1);
+            series9.ChartArea = "ChartArea1";
+            series9.Legend = "Legend1";
+            series9.Name = "Product Is Sold";
+            this.chartProduct.Series.Add(series9);
             this.chartProduct.Size = new System.Drawing.Size(435, 243);
             this.chartProduct.TabIndex = 30;
             this.chartProduct.Text = "chart2";
-            title1.Name = "Title1";
-            title1.Text = "Products Chart";
-            this.chartProduct.Titles.Add(title1);
+            title9.Name = "Title1";
+            title9.Text = "Products Chart";
+            this.chartProduct.Titles.Add(title9);
             // 
             // pnlGridProduct
             // 
@@ -141,6 +148,7 @@ namespace WinForm.Pages
             this.gridView2.Name = "gridView2";
             this.gridView2.OptionsBehavior.ReadOnly = true;
             this.gridView2.OptionsFind.AlwaysVisible = true;
+            this.gridView2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.gridView2_MouseUp);
             // 
             // picRefresh
             // 
@@ -242,22 +250,22 @@ namespace WinForm.Pages
             // 
             // chartAnimal
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chartAnimal.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chartAnimal.Legends.Add(legend2);
+            chartArea10.Name = "ChartArea1";
+            this.chartAnimal.ChartAreas.Add(chartArea10);
+            legend10.Name = "Legend1";
+            this.chartAnimal.Legends.Add(legend10);
             this.chartAnimal.Location = new System.Drawing.Point(12, 293);
             this.chartAnimal.Name = "chartAnimal";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Animals Is Sold";
-            this.chartAnimal.Series.Add(series2);
+            series10.ChartArea = "ChartArea1";
+            series10.Legend = "Legend1";
+            series10.Name = "Animals Is Sold";
+            this.chartAnimal.Series.Add(series10);
             this.chartAnimal.Size = new System.Drawing.Size(435, 243);
             this.chartAnimal.TabIndex = 9;
             this.chartAnimal.Text = "chart1";
-            title2.Name = "Title1";
-            title2.Text = "Animals Chart";
-            this.chartAnimal.Titles.Add(title2);
+            title10.Name = "Title1";
+            title10.Text = "Animals Chart";
+            this.chartAnimal.Titles.Add(title10);
             // 
             // pnlGridAnimal
             // 
@@ -285,6 +293,7 @@ namespace WinForm.Pages
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsBehavior.ReadOnly = true;
             this.gridView1.OptionsFind.AlwaysVisible = true;
+            this.gridView1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.gridView1_MouseUp);
             // 
             // label2
             // 
@@ -295,6 +304,34 @@ namespace WinForm.Pages
             this.label2.Size = new System.Drawing.Size(189, 29);
             this.label2.TabIndex = 7;
             this.label2.Text = "ANIMALS LIST";
+            // 
+            // contextAnimal
+            // 
+            this.contextAnimal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exportToExcelToolStripMenuItem});
+            this.contextAnimal.Name = "contextAnimal";
+            this.contextAnimal.Size = new System.Drawing.Size(153, 26);
+            // 
+            // contextProduct
+            // 
+            this.contextProduct.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exportToExcelToolStripMenuItem1});
+            this.contextProduct.Name = "contextProduct";
+            this.contextProduct.Size = new System.Drawing.Size(181, 48);
+            // 
+            // exportToExcelToolStripMenuItem
+            // 
+            this.exportToExcelToolStripMenuItem.Name = "exportToExcelToolStripMenuItem";
+            this.exportToExcelToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exportToExcelToolStripMenuItem.Text = "Export to Excel";
+            this.exportToExcelToolStripMenuItem.Click += new System.EventHandler(this.exportToExcelToolStripMenuItem_Click);
+            // 
+            // exportToExcelToolStripMenuItem1
+            // 
+            this.exportToExcelToolStripMenuItem1.Name = "exportToExcelToolStripMenuItem1";
+            this.exportToExcelToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.exportToExcelToolStripMenuItem1.Text = "Export to Excel";
+            this.exportToExcelToolStripMenuItem1.Click += new System.EventHandler(this.exportToExcelToolStripMenuItem1_Click);
             // 
             // FormBarnDetails
             // 
@@ -321,6 +358,8 @@ namespace WinForm.Pages
             this.pnlGridAnimal.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridAnimalList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            this.contextAnimal.ResumeLayout(false);
+            this.contextProduct.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -348,5 +387,9 @@ namespace WinForm.Pages
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraGrid.GridControl dataGridProductList;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
+        private System.Windows.Forms.ContextMenuStrip contextAnimal;
+        private System.Windows.Forms.ToolStripMenuItem exportToExcelToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip contextProduct;
+        private System.Windows.Forms.ToolStripMenuItem exportToExcelToolStripMenuItem1;
     }
 }

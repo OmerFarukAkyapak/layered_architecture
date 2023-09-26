@@ -32,6 +32,8 @@ namespace WinForm.Pages
             this.components = new System.ComponentModel.Container();
             this.pnlProduct = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtSelectedID = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.picRefresh = new System.Windows.Forms.PictureBox();
             this.txtCurrent = new System.Windows.Forms.TextBox();
             this.txtProductAomunt = new System.Windows.Forms.TextBox();
@@ -48,8 +50,7 @@ namespace WinForm.Pages
             this.label1 = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.selectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.txtSelectedID = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.exportToExcelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlProduct.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picRefresh)).BeginInit();
@@ -88,6 +89,25 @@ namespace WinForm.Pages
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(393, 654);
             this.panel2.TabIndex = 1;
+            // 
+            // txtSelectedID
+            // 
+            this.txtSelectedID.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
+            this.txtSelectedID.Location = new System.Drawing.Point(86, 125);
+            this.txtSelectedID.Name = "txtSelectedID";
+            this.txtSelectedID.ReadOnly = true;
+            this.txtSelectedID.Size = new System.Drawing.Size(171, 36);
+            this.txtSelectedID.TabIndex = 31;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Location = new System.Drawing.Point(82, 99);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(178, 23);
+            this.label4.TabIndex = 30;
+            this.label4.Text = "Selected ProductID:";
             // 
             // picRefresh
             // 
@@ -228,35 +248,24 @@ namespace WinForm.Pages
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.selectToolStripMenuItem});
+            this.selectToolStripMenuItem,
+            this.exportToExcelToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(106, 26);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 70);
             // 
             // selectToolStripMenuItem
             // 
             this.selectToolStripMenuItem.Name = "selectToolStripMenuItem";
-            this.selectToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
+            this.selectToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.selectToolStripMenuItem.Text = "Select";
             this.selectToolStripMenuItem.Click += new System.EventHandler(this.selectToolStripMenuItem_Click);
             // 
-            // txtSelectedID
+            // exportToExcelToolStripMenuItem
             // 
-            this.txtSelectedID.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
-            this.txtSelectedID.Location = new System.Drawing.Point(86, 125);
-            this.txtSelectedID.Name = "txtSelectedID";
-            this.txtSelectedID.ReadOnly = true;
-            this.txtSelectedID.Size = new System.Drawing.Size(171, 36);
-            this.txtSelectedID.TabIndex = 31;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(82, 99);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(178, 23);
-            this.label4.TabIndex = 30;
-            this.label4.Text = "Selected ProductID:";
+            this.exportToExcelToolStripMenuItem.Name = "exportToExcelToolStripMenuItem";
+            this.exportToExcelToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exportToExcelToolStripMenuItem.Text = "Export to Excel";
+            this.exportToExcelToolStripMenuItem.Click += new System.EventHandler(this.exportToExcelToolStripMenuItem_Click);
             // 
             // FormProductPage
             // 
@@ -303,5 +312,6 @@ namespace WinForm.Pages
         private System.Windows.Forms.PictureBox picRefresh;
         private System.Windows.Forms.TextBox txtSelectedID;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ToolStripMenuItem exportToExcelToolStripMenuItem;
     }
 }

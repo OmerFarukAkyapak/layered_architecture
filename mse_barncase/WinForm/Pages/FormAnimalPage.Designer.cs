@@ -60,6 +60,7 @@ namespace WinForm.Pages
             this.label2 = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.seçToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportToExcelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlAnimalPage.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picRefresh)).BeginInit();
@@ -382,16 +383,24 @@ namespace WinForm.Pages
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.seçToolStripMenuItem});
+            this.seçToolStripMenuItem,
+            this.exportToExcelToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(106, 26);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 70);
             // 
             // seçToolStripMenuItem
             // 
             this.seçToolStripMenuItem.Name = "seçToolStripMenuItem";
-            this.seçToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
+            this.seçToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.seçToolStripMenuItem.Text = "Select";
             this.seçToolStripMenuItem.Click += new System.EventHandler(this.seçToolStripMenuItem_Click);
+            // 
+            // exportToExcelToolStripMenuItem
+            // 
+            this.exportToExcelToolStripMenuItem.Name = "exportToExcelToolStripMenuItem";
+            this.exportToExcelToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exportToExcelToolStripMenuItem.Text = "Export to Excel";
+            this.exportToExcelToolStripMenuItem.Click += new System.EventHandler(this.exportToExcelToolStripMenuItem_Click);
             // 
             // FormAnimalPage
             // 
@@ -451,5 +460,6 @@ namespace WinForm.Pages
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private System.Windows.Forms.TextBox txtSelectedID;
         private System.Windows.Forms.PictureBox picRefresh;
+        private System.Windows.Forms.ToolStripMenuItem exportToExcelToolStripMenuItem;
     }
 }
