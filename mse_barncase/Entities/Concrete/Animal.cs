@@ -1,6 +1,7 @@
 ﻿using Core.Entities;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace Entities.Concrete
@@ -13,6 +14,8 @@ namespace Entities.Concrete
         public int AnimalAge { get; set; }   
         public bool AnimalIsSold { get; set; }
         public bool AnimalIsAlive { get; set; }
-       // public AnimalGenders AnimalGenders { get; set; }
+
+        [ForeignKey("AnimalGenderID")] 
+        public AnimalGenders AnimalGenders { get; set; }
     }
 }

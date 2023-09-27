@@ -53,7 +53,10 @@ namespace Bussiness.Concrete
         {
             return new SuccessDataResult<List<Animal>>(_animalDal.GetList().Where(a => a.AnimalTypeID == typeId).ToList());
         }
-
+        public IDataResult<List<string>> GetListAnimalGendersName()
+        {
+            return new SuccessDataResult<List<string>>(_animalDal.GetListByGender().ToList());
+        }
         public IResult Update(int animalid, bool issold)
         {
             var selectedAnimal = _animalDal.Get(a => a.AnimalID == animalid);

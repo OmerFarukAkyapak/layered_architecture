@@ -36,7 +36,7 @@ namespace WinForm.Pages
             var animalTypeNames = _animalTypesService.GetAnimalTypeNames();
             cmbBoxAnimalType.DataSource = animalTypeNames.Data;
 
-            var animalGenderNames = _animalGendersService.GetAnimalGenderNames();
+            var animalGenderNames = _animalService.GetListAnimalGendersName();
             cmbBoxAnimalGender.DataSource = animalGenderNames.Data;
 
         }
