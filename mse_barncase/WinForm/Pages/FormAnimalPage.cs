@@ -2,13 +2,6 @@
 using Bussiness.DependencyResolvers;
 using Microsoft.Extensions.DependencyInjection;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WinForm.Pages
@@ -17,10 +10,8 @@ namespace WinForm.Pages
     {
         private IBarnService _barnService;
         private IAnimalService _animalService;
-        private IProductService _productService;
         private IAnimalTypesService _animalTypesService;
         private IAnimalGendersService _animalGendersService;
-        private IProductTypesService _productTypesService;
         private IAnimalViewService _animalsViewService;
         public FormAnimalPage()
         {
@@ -28,10 +19,8 @@ namespace WinForm.Pages
 
             _barnService = DependencyInjection.ConfigureServices().GetRequiredService<IBarnService>();
             _animalService = DependencyInjection.ConfigureServices().GetRequiredService<IAnimalService>();
-            _productService = DependencyInjection.ConfigureServices().GetRequiredService<IProductService>();
             _animalTypesService = DependencyInjection.ConfigureServices().GetRequiredService<IAnimalTypesService>();
             _animalGendersService = DependencyInjection.ConfigureServices().GetRequiredService<IAnimalGendersService>();
-            _productTypesService = DependencyInjection.ConfigureServices().GetRequiredService<IProductTypesService>();
             _animalsViewService = DependencyInjection.ConfigureServices().GetRequiredService<IAnimalViewService>();
 
             FormLoad();
@@ -100,7 +89,7 @@ namespace WinForm.Pages
             DialogResult result = MessageBox.Show("Are you sure you want to do this?", "Yes", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
-                _animalService.Update(selectedID,true);
+                _animalService.Update(selectedID, true);
                 _barnService.IncreaceAmount(sellPrice);
                 FormLoad();
             }
@@ -113,7 +102,7 @@ namespace WinForm.Pages
 
         private void exportToExcelToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ExportToExcel(gridView1,"");
+            ExportToExcel(gridView1, "");
         }
         //Excel
         public void ExportToExcel(DevExpress.XtraGrid.Views.Grid.GridView GridView, string file)

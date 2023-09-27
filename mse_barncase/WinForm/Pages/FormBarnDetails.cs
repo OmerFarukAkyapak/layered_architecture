@@ -2,6 +2,7 @@
 using Bussiness.DependencyResolvers;
 using Microsoft.Extensions.DependencyInjection;
 using System;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace WinForm.Pages
@@ -38,8 +39,6 @@ namespace WinForm.Pages
             var productGrid = _productsViewService.GetListAll();
             dataGridProductList.DataSource = productGrid.Data;
 
-            var animals = _animalService.GetList();
-            var products = _productService.GetList();
 
             //charts
             int soldAnimalsCount = _animalsViewService.GetListSold().Data.Count;
@@ -48,7 +47,7 @@ namespace WinForm.Pages
             chartAnimal.Series.Clear();
             chartAnimal.Series.Add("Animals Is Sold");
             chartAnimal.Series["Animals Is Sold"].Points.AddXY("Sold", soldAnimalsCount);
-            chartAnimal.Series["Animals Is Sold"].Points.AddXY("NotSold", notSoldAnimalsCount);
+            chartAnimal.Series["Animals Is Sold"].Points.AddXY("InStock", notSoldAnimalsCount);
             chartAnimal.Series["Animals Is Sold"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
 
             int soldProductsCount = _productsViewService.GetListSold().Data.Count;
@@ -57,12 +56,15 @@ namespace WinForm.Pages
             chartProduct.Series.Clear();
             chartProduct.Series.Add("Products Is Sold");
             chartProduct.Series["Products Is Sold"].Points.AddXY("Sold", soldProductsCount);
-            chartProduct.Series["Products Is Sold"].Points.AddXY("NotSold", notSoldProductsCount);
+            chartProduct.Series["Products Is Sold"].Points.AddXY("InStock", notSoldProductsCount);
             chartProduct.Series["Products Is Sold"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
 
             //txts
             var barnAmount = _barnService.GetAmount();
             txtCurrent.Text = barnAmount.Data.FarmAmount.ToString();
+
+            var animals = _animalService.GetList();
+            var products = _productService.GetList();
 
             decimal animalWorth = 0;
 
@@ -83,7 +85,6 @@ namespace WinForm.Pages
 
             }
             txtProductWorth.Text = productWorth.ToString();
-
 
         }
 

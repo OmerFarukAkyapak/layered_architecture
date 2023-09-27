@@ -13,5 +13,6 @@ namespace Entities.Concrete
         public int AnimalAge { get; set; }   
         public bool AnimalIsSold { get; set; }
         public bool AnimalIsAlive { get; set; }
+       // public AnimalGenders AnimalGenders { get; set; }
     }
 }
