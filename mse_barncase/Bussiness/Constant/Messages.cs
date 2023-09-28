@@ -16,7 +16,7 @@ namespace Bussiness.Constant
 
         public static string BarnUpdated = "Barn update is successful";
 
-
+        public static string Error = "Error in Business Layer";
 
     }
 }

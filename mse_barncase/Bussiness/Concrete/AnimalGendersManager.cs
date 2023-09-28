@@ -1,4 +1,5 @@
 ﻿using Bussiness.Abstract;
+using Bussiness.Constant;
 using Core.Utilities.Result;
 using DataAccess.Abstact;
 using Entities.Concrete;
@@ -23,7 +24,15 @@ namespace Bussiness.Concrete
         public IDataResult<List<string>> GetAnimalGenderNames()
         {
             var animalTypes = _animalGender.GetList().Select(at => at.GenderName).ToList();
-            return new SuccessDataResult<List<string>>(animalTypes);
+            if (animalTypes != null)
+            {
+
+                return new SuccessDataResult<List<string>>(animalTypes);
+            }
+            else
+            {
+                return new ErrorDataResult<List<string>>(Messages.Error);
+            }
         }
     }
 }

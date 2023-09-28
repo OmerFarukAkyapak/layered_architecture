@@ -30,7 +30,7 @@ namespace Bussiness.Concrete
             }
             else
             {
-                return new ErrorDataResult<Barn>("not enough");
+                return new ErrorDataResult<Barn>(Messages.Error);
             }
         }
 
@@ -44,7 +44,7 @@ namespace Bussiness.Concrete
             }
             else
             {
-                return new ErrorDataResult<Barn>("Barn miktarı bulunamadı.");
+                return new ErrorDataResult<Barn>(Messages.Error);
             }
 
         }
@@ -57,10 +57,17 @@ namespace Bussiness.Concrete
         public IResult IncreaceAmount(decimal price)
         {
             var farmAmount = _barnDal.Get(f => f.FarmID == 1);
+            if (farmAmount != null)
+            {
 
-            farmAmount.FarmAmount = farmAmount.FarmAmount + price;
-            _barnDal.Update(farmAmount);
-            return new SuccessResult(Messages.BarnUpdated);
+                farmAmount.FarmAmount = farmAmount.FarmAmount + price;
+                _barnDal.Update(farmAmount);
+                return new SuccessResult(Messages.BarnUpdated);
+            }
+            else
+            {
+                return new ErrorDataResult<Barn>(Messages.Error);
+            }
 
         }
     }

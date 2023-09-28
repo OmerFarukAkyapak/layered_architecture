@@ -28,15 +28,30 @@ namespace Bussiness.Concrete
             animal.AnimalIsAlive = true;
             animal.AnimalIsSold = false;
 
-            _animalDal.Add(animal);
-            return new SuccessResult(Messages.AnimalAdded);
+            if (animal != null)
+            {
+                _animalDal.Add(animal);
+                return new SuccessResult(Messages.AnimalAdded);
+            }
+            else
+            {
+                return new ErrorResult(Messages.Error);
+            }
         }
 
         public IResult Delete(int animalid)
         {
             var selectedAnimal = _animalDal.Get(a => a.AnimalID == animalid);
-            _animalDal.Delete(selectedAnimal);
-            return new SuccessResult(Messages.AnimalDeleted);
+            if (selectedAnimal != null)
+            {
+
+                _animalDal.Delete(selectedAnimal);
+                return new SuccessResult(Messages.AnimalDeleted);
+            }
+            else
+            {
+                return new ErrorResult(Messages.Error);
+            }
         }
 
         public IDataResult<Animal> GetById(int animalId)
@@ -46,12 +61,20 @@ namespace Bussiness.Concrete
 
         public IDataResult<List<Animal>> GetList()
         {
-            return new SuccessDataResult<List<Animal>>(_animalDal.GetList().Where(a => a.AnimalIsSold == false).ToList());
+            return new SuccessDataResult<List<Animal>>(_animalDal
+                .GetList()
+                .Where(a => a.AnimalIsSold == false)
+                .ToList()
+                );
         }
 
         public IDataResult<List<Animal>> GetListByTypes(int typeId)
         {
-            return new SuccessDataResult<List<Animal>>(_animalDal.GetList().Where(a => a.AnimalTypeID == typeId).ToList());
+            return new SuccessDataResult<List<Animal>>(_animalDal
+                .GetList()
+                .Where(a => a.AnimalTypeID == typeId)
+                .ToList()
+                );
         }
         public IDataResult<List<string>> GetListAnimalGendersName()
         {
