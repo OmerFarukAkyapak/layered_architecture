@@ -3,6 +3,7 @@ using Bussiness.DependencyResolvers;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Windows.Forms;
+using WinForm.Utilities;
 
 namespace WinForm.Pages
 {
@@ -102,24 +103,7 @@ namespace WinForm.Pages
 
         private void exportToExcelToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ExportToExcel(gridView1, "");
-        }
-        //Excel
-        public void ExportToExcel(DevExpress.XtraGrid.Views.Grid.GridView GridView, string file)
-        {
-            try
-            {
-                SaveFileDialog dialog = new SaveFileDialog()
-                {
-                    Filter = "Excel |*.xlsx",
-                    InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop),
-                    FileName = file
-                };
-                dialog.ShowDialog();
-                GridView.ExportToXlsx(dialog.FileName);
-                MessageBox.Show(" Başarılı ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch (Exception ex) { MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            ExcelExporter.ExportToExcel(gridView1,"");
         }
     }
 }
